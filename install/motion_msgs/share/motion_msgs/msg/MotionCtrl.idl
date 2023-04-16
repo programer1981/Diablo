@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from motion_msgs/msg/MotionCtrl.msg
+// generated code does not contain a copyright notice
+
+
+module motion_msgs {
+  module msg {
+    struct MotionCtrl {
+      int32 cmd_id;
+
+      double value;
+    };
+  };
+};

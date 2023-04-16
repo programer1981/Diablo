@@ -1,0 +1,6 @@
+Invoking command in '/home/diablo/catkin_ws/build/motion_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interfaces/motion_msgs -DCMAKE_INSTALL_PREFIX=/home/diablo/catkin_ws/install/motion_msgs
+Invoked command in '/home/diablo/catkin_ws/build/motion_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interfaces/motion_msgs -DCMAKE_INSTALL_PREFIX=/home/diablo/catkin_ws/install/motion_msgs
+Invoking command in '/home/diablo/catkin_ws/build/motion_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/diablo/catkin_ws/build/motion_msgs -- -j4 -l4
+Invoked command in '/home/diablo/catkin_ws/build/motion_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/diablo/catkin_ws/build/motion_msgs -- -j4 -l4
+Invoking command in '/home/diablo/catkin_ws/build/motion_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/diablo/catkin_ws/build/motion_msgs
+Invoked command in '/home/diablo/catkin_ws/build/motion_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/diablo/catkin_ws/build/motion_msgs

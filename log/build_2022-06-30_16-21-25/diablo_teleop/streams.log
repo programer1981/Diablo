@@ -1,0 +1,37 @@
+[4.126s] Invoking command in '/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interaction/diablo_teleop': PYTHONPATH=/home/diablo/catkin_ws/build/diablo_teleop/prefix_override:/home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/diablo_teleop build --build-base /home/diablo/catkin_ws/build/diablo_teleop/build install --record /home/diablo/catkin_ws/build/diablo_teleop/install.log --single-version-externally-managed
+[5.384s] running egg_info
+[5.387s] creating ../../../../build/diablo_teleop/diablo_teleop.egg-info
+[5.388s] writing ../../../../build/diablo_teleop/diablo_teleop.egg-info/PKG-INFO
+[5.390s] writing dependency_links to ../../../../build/diablo_teleop/diablo_teleop.egg-info/dependency_links.txt
+[5.391s] writing entry points to ../../../../build/diablo_teleop/diablo_teleop.egg-info/entry_points.txt
+[5.392s] writing requirements to ../../../../build/diablo_teleop/diablo_teleop.egg-info/requires.txt
+[5.392s] writing top-level names to ../../../../build/diablo_teleop/diablo_teleop.egg-info/top_level.txt
+[5.406s] writing manifest file '../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'
+[5.570s] reading manifest file '../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'
+[5.578s] writing manifest file '../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'
+[5.581s] running build
+[5.583s] running build_py
+[5.585s] creating /home/diablo/catkin_ws/build/diablo_teleop/build
+[5.587s] creating /home/diablo/catkin_ws/build/diablo_teleop/build/lib
+[5.588s] creating /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop
+[5.590s] copying diablo_teleop/__init__.py -> /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop
+[5.591s] copying diablo_teleop/teleop.py -> /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop
+[5.593s] running install
+[5.594s] running install_lib
+[5.601s] creating /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop
+[5.603s] copying /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop/__init__.py -> /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop
+[5.604s] copying /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop/teleop.py -> /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop
+[5.607s] byte-compiling /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop/__init__.py to __init__.cpython-38.pyc
+[5.616s] byte-compiling /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop/teleop.py to teleop.cpython-38.pyc
+[5.621s] running install_data
+[5.626s] creating /home/diablo/catkin_ws/install/diablo_teleop/share/ament_index
+[5.627s] creating /home/diablo/catkin_ws/install/diablo_teleop/share/ament_index/resource_index
+[5.629s] creating /home/diablo/catkin_ws/install/diablo_teleop/share/ament_index/resource_index/packages
+[5.630s] copying resource/diablo_teleop -> /home/diablo/catkin_ws/install/diablo_teleop/share/ament_index/resource_index/packages
+[5.631s] copying package.xml -> /home/diablo/catkin_ws/install/diablo_teleop/share/diablo_teleop
+[5.632s] running install_egg_info
+[5.641s] Copying ../../../../build/diablo_teleop/diablo_teleop.egg-info to /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop-0.0.0-py3.8.egg-info
+[5.652s] running install_scripts
+[5.744s] Installing teleop_node script to /home/diablo/catkin_ws/install/diablo_teleop/lib/diablo_teleop
+[5.746s] writing list of installed files to '/home/diablo/catkin_ws/build/diablo_teleop/install.log'
+[5.846s] Invoked command in '/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interaction/diablo_teleop' returned '0': PYTHONPATH=/home/diablo/catkin_ws/build/diablo_teleop/prefix_override:/home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/diablo_teleop build --build-base /home/diablo/catkin_ws/build/diablo_teleop/build install --record /home/diablo/catkin_ws/build/diablo_teleop/install.log --single-version-externally-managed

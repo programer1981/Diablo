@@ -1,0 +1,7 @@
+{
+  "package_name": "motion_msgs",
+  "non_idl_tuples": [
+    "/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interfaces/motion_msgs:msg/LegMotors.msg",
+    "/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interfaces/motion_msgs:msg/MotionCtrl.msg"
+  ]
+}

@@ -1,0 +1,1770 @@
+[0.000000] (-) TimerEvent: {}
+[0.000840] (diablo_teleop) JobQueued: {'identifier': 'diablo_teleop', 'dependencies': OrderedDict()}
+[0.001286] (motion_msgs) JobQueued: {'identifier': 'motion_msgs', 'dependencies': OrderedDict()}
+[0.002644] (diablo_utils) JobQueued: {'identifier': 'diablo_utils', 'dependencies': OrderedDict([('motion_msgs', '/home/diablo/catkin_ws/install/motion_msgs')])}
+[0.003294] (diablo_body) JobQueued: {'identifier': 'diablo_body', 'dependencies': OrderedDict([('motion_msgs', '/home/diablo/catkin_ws/install/motion_msgs'), ('diablo_utils', '/home/diablo/catkin_ws/install/diablo_utils')])}
+[0.004928] (diablo_ctrl) JobQueued: {'identifier': 'diablo_ctrl', 'dependencies': OrderedDict([('motion_msgs', '/home/diablo/catkin_ws/install/motion_msgs'), ('diablo_utils', '/home/diablo/catkin_ws/install/diablo_utils'), ('diablo_body', '/home/diablo/catkin_ws/install/diablo_body')])}
+[0.005519] (motion_msgs) JobStarted: {'identifier': 'motion_msgs'}
+[0.061718] (diablo_teleop) JobStarted: {'identifier': 'diablo_teleop'}
+[0.098734] (-) TimerEvent: {}
+[0.111646] (motion_msgs) JobProgress: {'identifier': 'motion_msgs', 'progress': 'cmake'}
+[0.112906] (motion_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interfaces/motion_msgs', '-DCMAKE_INSTALL_PREFIX=/home/diablo/catkin_ws/install/motion_msgs'], 'cwd': '/home/diablo/catkin_ws/build/motion_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/motion_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.198747] (-) TimerEvent: {}
+[0.300937] (-) TimerEvent: {}
+[0.401796] (-) TimerEvent: {}
+[0.503654] (-) TimerEvent: {}
+[0.604624] (-) TimerEvent: {}
+[0.705889] (-) TimerEvent: {}
+[0.808615] (-) TimerEvent: {}
+[0.909488] (-) TimerEvent: {}
+[1.010255] (-) TimerEvent: {}
+[1.110971] (-) TimerEvent: {}
+[1.193984] (motion_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.211126] (-) TimerEvent: {}
+[1.311992] (-) TimerEvent: {}
+[1.413191] (-) TimerEvent: {}
+[1.514979] (-) TimerEvent: {}
+[1.617113] (-) TimerEvent: {}
+[1.718188] (-) TimerEvent: {}
+[1.819084] (-) TimerEvent: {}
+[1.920333] (-) TimerEvent: {}
+[1.962966] (motion_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.999483] (motion_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.020493] (-) TimerEvent: {}
+[2.121340] (-) TimerEvent: {}
+[2.223563] (-) TimerEvent: {}
+[2.326817] (-) TimerEvent: {}
+[2.395982] (motion_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.401766] (motion_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.426933] (-) TimerEvent: {}
+[2.527824] (-) TimerEvent: {}
+[2.629902] (-) TimerEvent: {}
+[2.730727] (-) TimerEvent: {}
+[2.741540] (motion_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.785862] (motion_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.788070] (motion_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.802612] (motion_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.830908] (-) TimerEvent: {}
+[2.931846] (-) TimerEvent: {}
+[3.032782] (-) TimerEvent: {}
+[3.139301] (-) TimerEvent: {}
+[3.162338] (motion_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.168530] (motion_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.239564] (-) TimerEvent: {}
+[3.340819] (-) TimerEvent: {}
+[3.443044] (-) TimerEvent: {}
+[3.544117] (-) TimerEvent: {}
+[3.566121] (motion_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.618499] (motion_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.621723] (motion_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.644440] (-) TimerEvent: {}
+[3.666196] (motion_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.744550] (-) TimerEvent: {}
+[3.842208] (motion_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.843086] (motion_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.844756] (-) TimerEvent: {}
+[3.945870] (-) TimerEvent: {}
+[4.050227] (-) TimerEvent: {}
+[4.153136] (-) TimerEvent: {}
+[4.174525] (diablo_teleop) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../../build/diablo_teleop', 'build', '--build-base', '/home/diablo/catkin_ws/build/diablo_teleop/build', 'install', '--record', '/home/diablo/catkin_ws/build/diablo_teleop/install.log', '--single-version-externally-managed'], 'cwd': '/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interaction/diablo_teleop', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'diablo', 'SSH_CLIENT': '192.168.10.17 58717 22', 'LC_TIME': 'zh_CN.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/diablo', 'OLDPWD': '/home/diablo/catkin_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module', 'LC_MONETARY': 'zh_CN.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'UBUNTU_MENUPROXY': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'diablo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'PWD': '/home/diablo/catkin_ws/build/diablo_teleop', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.10.17 58717 192.168.10.16 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/diablo/catkin_ws/build/diablo_teleop/prefix_override:/home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1'}, 'shell': False}
+[4.253345] (-) TimerEvent: {}
+[4.354359] (-) TimerEvent: {}
+[4.456293] (-) TimerEvent: {}
+[4.557128] (-) TimerEvent: {}
+[4.658248] (-) TimerEvent: {}
+[4.758994] (-) TimerEvent: {}
+[4.859797] (-) TimerEvent: {}
+[4.960595] (-) TimerEvent: {}
+[5.062520] (-) TimerEvent: {}
+[5.164379] (-) TimerEvent: {}
+[5.265985] (-) TimerEvent: {}
+[5.337728] (motion_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[5.366169] (-) TimerEvent: {}
+[5.371341] (motion_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.445075] (motion_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[5.446299] (diablo_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[5.449479] (diablo_teleop) StdoutLine: {'line': b'creating ../../../../build/diablo_teleop/diablo_teleop.egg-info\n'}
+[5.450509] (diablo_teleop) StdoutLine: {'line': b'writing ../../../../build/diablo_teleop/diablo_teleop.egg-info/PKG-INFO\n'}
+[5.451709] (diablo_teleop) StdoutLine: {'line': b'writing dependency_links to ../../../../build/diablo_teleop/diablo_teleop.egg-info/dependency_links.txt\n'}
+[5.452748] (diablo_teleop) StdoutLine: {'line': b'writing entry points to ../../../../build/diablo_teleop/diablo_teleop.egg-info/entry_points.txt\n'}
+[5.453891] (diablo_teleop) StdoutLine: {'line': b'writing requirements to ../../../../build/diablo_teleop/diablo_teleop.egg-info/requires.txt\n'}
+[5.454767] (diablo_teleop) StdoutLine: {'line': b'writing top-level names to ../../../../build/diablo_teleop/diablo_teleop.egg-info/top_level.txt\n'}
+[5.466362] (-) TimerEvent: {}
+[5.468111] (diablo_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'\n"}
+[5.566594] (-) TimerEvent: {}
+[5.632667] (diablo_teleop) StdoutLine: {'line': b"reading manifest file '../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'\n"}
+[5.639462] (diablo_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'\n"}
+[5.641575] (diablo_teleop) StdoutLine: {'line': b'running build\n'}
+[5.644422] (diablo_teleop) StdoutLine: {'line': b'running build_py\n'}
+[5.646784] (diablo_teleop) StdoutLine: {'line': b'creating /home/diablo/catkin_ws/build/diablo_teleop/build\n'}
+[5.648232] (diablo_teleop) StdoutLine: {'line': b'creating /home/diablo/catkin_ws/build/diablo_teleop/build/lib\n'}
+[5.649906] (diablo_teleop) StdoutLine: {'line': b'creating /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop\n'}
+[5.651513] (diablo_teleop) StdoutLine: {'line': b'copying diablo_teleop/__init__.py -> /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop\n'}
+[5.653135] (diablo_teleop) StdoutLine: {'line': b'copying diablo_teleop/teleop.py -> /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop\n'}
+[5.655023] (diablo_teleop) StdoutLine: {'line': b'running install\n'}
+[5.656211] (diablo_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[5.662244] (diablo_teleop) StdoutLine: {'line': b'creating /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop\n'}
+[5.663980] (diablo_teleop) StdoutLine: {'line': b'copying /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop/__init__.py -> /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop\n'}
+[5.665706] (diablo_teleop) StdoutLine: {'line': b'copying /home/diablo/catkin_ws/build/diablo_teleop/build/lib/diablo_teleop/teleop.py -> /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop\n'}
+[5.666615] (-) TimerEvent: {}
+[5.668827] (diablo_teleop) StdoutLine: {'line': b'byte-compiling /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop/__init__.py to __init__.cpython-38.pyc\n'}
+[5.677255] (diablo_teleop) StdoutLine: {'line': b'byte-compiling /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop/teleop.py to teleop.cpython-38.pyc\n'}
+[5.683184] (diablo_teleop) StdoutLine: {'line': b'running install_data\n'}
+[5.686860] (diablo_teleop) StdoutLine: {'line': b'creating /home/diablo/catkin_ws/install/diablo_teleop/share/ament_index\n'}
+[5.689203] (diablo_teleop) StdoutLine: {'line': b'creating /home/diablo/catkin_ws/install/diablo_teleop/share/ament_index/resource_index\n'}
+[5.690712] (diablo_teleop) StdoutLine: {'line': b'creating /home/diablo/catkin_ws/install/diablo_teleop/share/ament_index/resource_index/packages\n'}
+[5.692198] (diablo_teleop) StdoutLine: {'line': b'copying resource/diablo_teleop -> /home/diablo/catkin_ws/install/diablo_teleop/share/ament_index/resource_index/packages\n'}
+[5.693247] (diablo_teleop) StdoutLine: {'line': b'copying package.xml -> /home/diablo/catkin_ws/install/diablo_teleop/share/diablo_teleop\n'}
+[5.694442] (diablo_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.702759] (diablo_teleop) StdoutLine: {'line': b'Copying ../../../../build/diablo_teleop/diablo_teleop.egg-info to /home/diablo/catkin_ws/install/diablo_teleop/lib/python3.8/site-packages/diablo_teleop-0.0.0-py3.8.egg-info\n'}
+[5.713744] (diablo_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[5.766847] (-) TimerEvent: {}
+[5.806608] (diablo_teleop) StdoutLine: {'line': b'Installing teleop_node script to /home/diablo/catkin_ws/install/diablo_teleop/lib/diablo_teleop\n'}
+[5.808119] (diablo_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/diablo/catkin_ws/build/diablo_teleop/install.log'\n"}
+[5.867084] (-) TimerEvent: {}
+[5.907728] (diablo_teleop) CommandEnded: {'returncode': 0}
+[5.967216] (-) TimerEvent: {}
+[5.976482] (diablo_teleop) JobEnded: {'identifier': 'diablo_teleop', 'rc': 0}
+[6.067429] (-) TimerEvent: {}
+[6.168233] (-) TimerEvent: {}
+[6.269069] (-) TimerEvent: {}
+[6.370085] (-) TimerEvent: {}
+[6.420191] (motion_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[6.470242] (-) TimerEvent: {}
+[6.570950] (-) TimerEvent: {}
+[6.671751] (-) TimerEvent: {}
+[6.729477] (motion_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[6.771894] (-) TimerEvent: {}
+[6.872729] (-) TimerEvent: {}
+[6.973440] (-) TimerEvent: {}
+[7.074106] (-) TimerEvent: {}
+[7.174781] (-) TimerEvent: {}
+[7.275536] (-) TimerEvent: {}
+[7.376589] (-) TimerEvent: {}
+[7.477793] (-) TimerEvent: {}
+[7.532611] (motion_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.577963] (-) TimerEvent: {}
+[7.678652] (-) TimerEvent: {}
+[7.714027] (motion_msgs) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[7.778821] (-) TimerEvent: {}
+[7.879554] (-) TimerEvent: {}
+[7.980374] (-) TimerEvent: {}
+[8.014589] (motion_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[8.080569] (-) TimerEvent: {}
+[8.181405] (-) TimerEvent: {}
+[8.282224] (-) TimerEvent: {}
+[8.382891] (-) TimerEvent: {}
+[8.483662] (-) TimerEvent: {}
+[8.584394] (-) TimerEvent: {}
+[8.685164] (-) TimerEvent: {}
+[8.786386] (-) TimerEvent: {}
+[8.837193] (motion_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[8.886617] (-) TimerEvent: {}
+[8.987540] (-) TimerEvent: {}
+[9.088380] (-) TimerEvent: {}
+[9.189165] (-) TimerEvent: {}
+[9.289839] (-) TimerEvent: {}
+[9.390569] (-) TimerEvent: {}
+[9.491370] (-) TimerEvent: {}
+[9.592131] (-) TimerEvent: {}
+[9.692830] (-) TimerEvent: {}
+[9.793558] (-) TimerEvent: {}
+[9.894283] (-) TimerEvent: {}
+[9.995009] (-) TimerEvent: {}
+[10.095772] (-) TimerEvent: {}
+[10.196588] (-) TimerEvent: {}
+[10.297324] (-) TimerEvent: {}
+[10.315655] (motion_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.397668] (-) TimerEvent: {}
+[10.499180] (-) TimerEvent: {}
+[10.600607] (-) TimerEvent: {}
+[10.641164] (motion_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.700742] (-) TimerEvent: {}
+[10.753645] (motion_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[10.770478] (motion_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[10.800898] (-) TimerEvent: {}
+[10.901639] (-) TimerEvent: {}
+[10.903657] (motion_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[10.904867] (motion_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[10.905600] (motion_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[10.906178] (motion_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[11.001853] (-) TimerEvent: {}
+[11.015600] (motion_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[11.102026] (-) TimerEvent: {}
+[11.202954] (-) TimerEvent: {}
+[11.304158] (-) TimerEvent: {}
+[11.404657] (motion_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.405305] (-) TimerEvent: {}
+[11.506390] (-) TimerEvent: {}
+[11.607129] (-) TimerEvent: {}
+[11.683384] (motion_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[11.699344] (motion_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/diablo/catkin_ws/build/motion_msgs\n'}
+[11.707446] (-) TimerEvent: {}
+[11.757863] (motion_msgs) CommandEnded: {'returncode': 0}
+[11.763061] (motion_msgs) JobProgress: {'identifier': 'motion_msgs', 'progress': 'build'}
+[11.763565] (motion_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diablo/catkin_ws/build/motion_msgs', '--', '-j4', '-l4'], 'cwd': '/home/diablo/catkin_ws/build/motion_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/motion_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[11.807896] (-) TimerEvent: {}
+[11.909435] (-) TimerEvent: {}
+[11.961781] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__cpp\x1b[0m\n'}
+[11.966079] (motion_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[12.009657] (-) TimerEvent: {}
+[12.024429] (motion_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[12.109893] (-) TimerEvent: {}
+[12.211808] (-) TimerEvent: {}
+[12.312676] (-) TimerEvent: {}
+[12.413347] (-) TimerEvent: {}
+[12.514083] (-) TimerEvent: {}
+[12.614867] (-) TimerEvent: {}
+[12.715967] (-) TimerEvent: {}
+[12.816889] (-) TimerEvent: {}
+[12.918809] (-) TimerEvent: {}
+[13.020659] (-) TimerEvent: {}
+[13.122431] (-) TimerEvent: {}
+[13.224415] (-) TimerEvent: {}
+[13.326284] (-) TimerEvent: {}
+[13.429161] (-) TimerEvent: {}
+[13.531788] (-) TimerEvent: {}
+[13.635162] (-) TimerEvent: {}
+[13.681864] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_generator_c\x1b[0m\n'}
+[13.735463] (-) TimerEvent: {}
+[13.768693] (motion_msgs) StdoutLine: {'line': b'[  5%] Built target motion_msgs__cpp\n'}
+[13.781875] (motion_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__rosidl_generator_c.dir/rosidl_generator_c/motion_msgs/msg/detail/leg_motors__functions.c.o\x1b[0m\n'}
+[13.824277] (motion_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__rosidl_generator_c.dir/rosidl_generator_c/motion_msgs/msg/detail/motion_ctrl__functions.c.o\x1b[0m\n'}
+[13.835680] (-) TimerEvent: {}
+[13.847667] (motion_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.854657] (motion_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.935906] (-) TimerEvent: {}
+[14.037236] (-) TimerEvent: {}
+[14.139996] (-) TimerEvent: {}
+[14.141536] (motion_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[14.240193] (-) TimerEvent: {}
+[14.248763] (motion_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libmotion_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[14.348232] (-) TimerEvent: {}
+[14.456434] (-) TimerEvent: {}
+[14.564302] (-) TimerEvent: {}
+[14.672201] (-) TimerEvent: {}
+[14.717701] (motion_msgs) StdoutLine: {'line': b'[ 20%] Built target motion_msgs__rosidl_generator_c\n'}
+[14.772411] (-) TimerEvent: {}
+[14.845918] (motion_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[14.872637] (-) TimerEvent: {}
+[14.974284] (-) TimerEvent: {}
+[15.076673] (-) TimerEvent: {}
+[15.178554] (-) TimerEvent: {}
+[15.280402] (-) TimerEvent: {}
+[15.383280] (-) TimerEvent: {}
+[15.486003] (-) TimerEvent: {}
+[15.587580] (-) TimerEvent: {}
+[15.593859] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[15.680220] (motion_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motion_msgs/msg/leg_motors__type_support.cpp.o\x1b[0m\n'}
+[15.687938] (-) TimerEvent: {}
+[15.793235] (-) TimerEvent: {}
+[15.897977] (-) TimerEvent: {}
+[15.999696] (-) TimerEvent: {}
+[16.052916] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[16.071581] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[16.099940] (-) TimerEvent: {}
+[16.139780] (motion_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motion_msgs/msg/detail/leg_motors__type_support.cpp.o\x1b[0m\n'}
+[16.184529] (motion_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motion_msgs/msg/detail/dds_fastrtps/leg_motors__type_support.cpp.o\x1b[0m\n'}
+[16.200198] (-) TimerEvent: {}
+[16.301086] (-) TimerEvent: {}
+[16.401946] (-) TimerEvent: {}
+[16.502811] (-) TimerEvent: {}
+[16.605335] (-) TimerEvent: {}
+[16.707379] (-) TimerEvent: {}
+[16.808359] (-) TimerEvent: {}
+[16.909253] (-) TimerEvent: {}
+[16.918608] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[17.012258] (-) TimerEvent: {}
+[17.116265] (-) TimerEvent: {}
+[17.145635] (motion_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motion_msgs/msg/detail/leg_motors__type_support.c.o\x1b[0m\n'}
+[17.216488] (-) TimerEvent: {}
+[17.318761] (-) TimerEvent: {}
+[17.421045] (-) TimerEvent: {}
+[17.459716] (motion_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motion_msgs/msg/detail/motion_ctrl__type_support.c.o\x1b[0m\n'}
+[17.521295] (-) TimerEvent: {}
+[17.623558] (-) TimerEvent: {}
+[17.726672] (-) TimerEvent: {}
+[17.829514] (-) TimerEvent: {}
+[17.898485] (motion_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking C shared library libmotion_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[17.929809] (-) TimerEvent: {}
+[18.031208] (-) TimerEvent: {}
+[18.099909] (motion_msgs) StdoutLine: {'line': b'[ 38%] Built target motion_msgs__rosidl_typesupport_introspection_c\n'}
+[18.131418] (-) TimerEvent: {}
+[18.174873] (motion_msgs) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[18.231722] (-) TimerEvent: {}
+[18.237475] (motion_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motion_msgs/msg/motion_ctrl__type_support.cpp.o\x1b[0m\n'}
+[18.307998] (motion_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motion_msgs/msg/detail/motion_ctrl__type_support.cpp.o\x1b[0m\n'}
+[18.332164] (-) TimerEvent: {}
+[18.444359] (-) TimerEvent: {}
+[18.548300] (-) TimerEvent: {}
+[18.650302] (-) TimerEvent: {}
+[18.752112] (-) TimerEvent: {}
+[18.854059] (-) TimerEvent: {}
+[18.956104] (-) TimerEvent: {}
+[19.058466] (-) TimerEvent: {}
+[19.161917] (-) TimerEvent: {}
+[19.264341] (-) TimerEvent: {}
+[19.366241] (-) TimerEvent: {}
+[19.468633] (-) TimerEvent: {}
+[19.571666] (-) TimerEvent: {}
+[19.674612] (-) TimerEvent: {}
+[19.775935] (-) TimerEvent: {}
+[19.876871] (-) TimerEvent: {}
+[19.977810] (-) TimerEvent: {}
+[20.078851] (-) TimerEvent: {}
+[20.180128] (-) TimerEvent: {}
+[20.208200] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[20.254993] (motion_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motion_msgs/msg/detail/dds_fastrtps/motion_ctrl__type_support.cpp.o\x1b[0m\n'}
+[20.280235] (-) TimerEvent: {}
+[20.319340] (motion_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/motion_msgs/msg/leg_motors__type_support.cpp.o\x1b[0m\n'}
+[20.380466] (-) TimerEvent: {}
+[20.482575] (-) TimerEvent: {}
+[20.512637] (motion_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[20.582887] (-) TimerEvent: {}
+[20.651163] (motion_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/motion_msgs/msg/motion_ctrl__type_support.cpp.o\x1b[0m\n'}
+[20.681223] (motion_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[20.683231] (-) TimerEvent: {}
+[20.785500] (-) TimerEvent: {}
+[20.870393] (motion_msgs) StdoutLine: {'line': b'[ 58%] Built target motion_msgs__rosidl_typesupport_cpp\n'}
+[20.885924] (-) TimerEvent: {}
+[20.900340] (motion_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[20.986394] (-) TimerEvent: {}
+[21.087890] (-) TimerEvent: {}
+[21.127529] (motion_msgs) StdoutLine: {'line': b'[ 61%] Built target motion_msgs__rosidl_typesupport_introspection_cpp\n'}
+[21.130043] (motion_msgs) StdoutLine: {'line': b'[ 61%] Built target motion_msgs__rosidl_typesupport_c\n'}
+[21.188124] (-) TimerEvent: {}
+[21.288850] (-) TimerEvent: {}
+[21.389597] (-) TimerEvent: {}
+[21.490570] (-) TimerEvent: {}
+[21.591658] (-) TimerEvent: {}
+[21.693087] (-) TimerEvent: {}
+[21.794414] (-) TimerEvent: {}
+[21.895306] (-) TimerEvent: {}
+[21.996086] (-) TimerEvent: {}
+[22.096823] (-) TimerEvent: {}
+[22.197688] (-) TimerEvent: {}
+[22.298644] (-) TimerEvent: {}
+[22.399459] (-) TimerEvent: {}
+[22.500212] (-) TimerEvent: {}
+[22.600950] (-) TimerEvent: {}
+[22.701710] (-) TimerEvent: {}
+[22.737953] (motion_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[22.801927] (-) TimerEvent: {}
+[22.902787] (-) TimerEvent: {}
+[23.003969] (-) TimerEvent: {}
+[23.106394] (-) TimerEvent: {}
+[23.207925] (-) TimerEvent: {}
+[23.258122] (motion_msgs) StdoutLine: {'line': b'[ 64%] Built target motion_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[23.304764] (motion_msgs) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[23.308125] (-) TimerEvent: {}
+[23.408807] (-) TimerEvent: {}
+[23.509517] (-) TimerEvent: {}
+[23.610245] (-) TimerEvent: {}
+[23.710955] (-) TimerEvent: {}
+[23.811703] (-) TimerEvent: {}
+[23.912473] (-) TimerEvent: {}
+[24.013166] (-) TimerEvent: {}
+[24.113870] (-) TimerEvent: {}
+[24.214657] (-) TimerEvent: {}
+[24.315501] (-) TimerEvent: {}
+[24.416375] (-) TimerEvent: {}
+[24.517108] (-) TimerEvent: {}
+[24.618130] (-) TimerEvent: {}
+[24.634041] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[24.718383] (-) TimerEvent: {}
+[24.724731] (motion_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motion_msgs/msg/detail/motion_ctrl__type_support_c.cpp.o\x1b[0m\n'}
+[24.739372] (motion_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motion_msgs/msg/detail/leg_motors__type_support_c.cpp.o\x1b[0m\n'}
+[24.818621] (-) TimerEvent: {}
+[24.920552] (-) TimerEvent: {}
+[25.022006] (-) TimerEvent: {}
+[25.126762] (-) TimerEvent: {}
+[25.228226] (-) TimerEvent: {}
+[25.329138] (-) TimerEvent: {}
+[25.430021] (-) TimerEvent: {}
+[25.530907] (-) TimerEvent: {}
+[25.631801] (-) TimerEvent: {}
+[25.733011] (-) TimerEvent: {}
+[25.847576] (-) TimerEvent: {}
+[25.949277] (-) TimerEvent: {}
+[26.051101] (-) TimerEvent: {}
+[26.152910] (-) TimerEvent: {}
+[26.254825] (-) TimerEvent: {}
+[26.357826] (-) TimerEvent: {}
+[26.460466] (-) TimerEvent: {}
+[26.562846] (-) TimerEvent: {}
+[26.666523] (-) TimerEvent: {}
+[26.767458] (-) TimerEvent: {}
+[26.840884] (motion_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[26.867672] (-) TimerEvent: {}
+[26.968505] (-) TimerEvent: {}
+[27.069379] (-) TimerEvent: {}
+[27.170386] (-) TimerEvent: {}
+[27.256976] (motion_msgs) StdoutLine: {'line': b'[ 74%] Built target motion_msgs__rosidl_typesupport_fastrtps_c\n'}
+[27.270558] (-) TimerEvent: {}
+[27.301518] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs\x1b[0m\n'}
+[27.348009] (motion_msgs) StdoutLine: {'line': b'[ 74%] Built target motion_msgs\n'}
+[27.370780] (-) TimerEvent: {}
+[27.395291] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__py\x1b[0m\n'}
+[27.443771] (motion_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[27.470943] (-) TimerEvent: {}
+[27.571635] (-) TimerEvent: {}
+[27.672440] (-) TimerEvent: {}
+[27.773183] (-) TimerEvent: {}
+[27.873962] (-) TimerEvent: {}
+[27.975778] (-) TimerEvent: {}
+[28.076600] (-) TimerEvent: {}
+[28.177342] (-) TimerEvent: {}
+[28.278007] (-) TimerEvent: {}
+[28.378851] (-) TimerEvent: {}
+[28.479926] (-) TimerEvent: {}
+[28.581882] (-) TimerEvent: {}
+[28.683342] (-) TimerEvent: {}
+[28.784446] (-) TimerEvent: {}
+[28.885262] (-) TimerEvent: {}
+[28.986570] (-) TimerEvent: {}
+[29.087551] (-) TimerEvent: {}
+[29.188729] (-) TimerEvent: {}
+[29.289457] (-) TimerEvent: {}
+[29.390177] (-) TimerEvent: {}
+[29.490854] (-) TimerEvent: {}
+[29.591603] (-) TimerEvent: {}
+[29.692342] (-) TimerEvent: {}
+[29.793592] (-) TimerEvent: {}
+[29.894512] (-) TimerEvent: {}
+[29.995467] (-) TimerEvent: {}
+[30.096166] (-) TimerEvent: {}
+[30.196941] (-) TimerEvent: {}
+[30.298115] (-) TimerEvent: {}
+[30.399235] (-) TimerEvent: {}
+[30.470895] (motion_msgs) StdoutLine: {'line': b'[ 76%] Built target motion_msgs__py\n'}
+[30.499420] (-) TimerEvent: {}
+[30.514962] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__python\x1b[0m\n'}
+[30.599620] (-) TimerEvent: {}
+[30.685717] (motion_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__python.dir/rosidl_generator_py/motion_msgs/msg/_motion_ctrl_s.c.o\x1b[0m\n'}
+[30.686823] (motion_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__python.dir/rosidl_generator_py/motion_msgs/msg/_leg_motors_s.c.o\x1b[0m\n'}
+[30.699808] (-) TimerEvent: {}
+[30.800611] (-) TimerEvent: {}
+[30.901517] (-) TimerEvent: {}
+[31.002524] (-) TimerEvent: {}
+[31.104649] (-) TimerEvent: {}
+[31.206864] (-) TimerEvent: {}
+[31.307996] (-) TimerEvent: {}
+[31.313437] (motion_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/motion_msgs/libmotion_msgs__python.so\x1b[0m\n'}
+[31.408223] (-) TimerEvent: {}
+[31.509208] (-) TimerEvent: {}
+[31.540192] (motion_msgs) StdoutLine: {'line': b'[ 84%] Built target motion_msgs__python\n'}
+[31.591801] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[31.595077] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[31.596208] (motion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motion_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[31.609408] (-) TimerEvent: {}
+[31.710192] (-) TimerEvent: {}
+[31.726500] (motion_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[31.742397] (motion_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[31.788583] (motion_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[31.810524] (-) TimerEvent: {}
+[31.912224] (-) TimerEvent: {}
+[32.013452] (-) TimerEvent: {}
+[32.114738] (-) TimerEvent: {}
+[32.217258] (-) TimerEvent: {}
+[32.233517] (motion_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/motion_msgs/motion_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[32.254905] (motion_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/motion_msgs/motion_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[32.304901] (motion_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/motion_msgs/motion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[32.317524] (-) TimerEvent: {}
+[32.419137] (-) TimerEvent: {}
+[32.489613] (motion_msgs) StdoutLine: {'line': b'[100%] Built target motion_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[32.503402] (motion_msgs) StdoutLine: {'line': b'[100%] Built target motion_msgs__rosidl_typesupport_c__pyext\n'}
+[32.519373] (-) TimerEvent: {}
+[32.620691] (-) TimerEvent: {}
+[32.686027] (motion_msgs) StdoutLine: {'line': b'[100%] Built target motion_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[32.720886] (-) TimerEvent: {}
+[32.735217] (motion_msgs) CommandEnded: {'returncode': 0}
+[32.821132] (-) TimerEvent: {}
+[32.922052] (-) TimerEvent: {}
+[33.022718] (-) TimerEvent: {}
+[33.093133] (motion_msgs) JobProgress: {'identifier': 'motion_msgs', 'progress': 'install'}
+[33.123054] (-) TimerEvent: {}
+[33.135293] (motion_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/diablo/catkin_ws/build/motion_msgs'], 'cwd': '/home/diablo/catkin_ws/build/motion_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/motion_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[33.180629] (motion_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.182153] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/ament_index/resource_index/rosidl_interfaces/motion_msgs\n'}
+[33.183578] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs\n'}
+[33.184386] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg\n'}
+[33.185029] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/motion_ctrl.h\n'}
+[33.186055] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[33.187131] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/leg_motors.h\n'}
+[33.188081] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail\n'}
+[33.188886] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__functions.h\n'}
+[33.189961] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__type_support.h\n'}
+[33.191071] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__struct.h\n'}
+[33.192159] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__functions.c\n'}
+[33.193275] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__type_support.h\n'}
+[33.194303] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__struct.h\n'}
+[33.195362] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__functions.c\n'}
+[33.196534] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__functions.h\n'}
+[33.198311] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/environment/library_path.sh\n'}
+[33.199634] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/environment/library_path.dsv\n'}
+[33.201471] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_generator_c.so\n'}
+[33.204137] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_generator_c.so" to ""\n'}
+[33.204845] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs\n'}
+[33.205566] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg\n'}
+[33.206146] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[33.206730] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail\n'}
+[33.207335] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_fastrtps_c.h\n'}
+[33.208336] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__rosidl_typesupport_fastrtps_c.h\n'}
+[33.209963] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[33.212820] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[33.213566] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs\n'}
+[33.214319] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg\n'}
+[33.214809] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[33.215357] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail\n'}
+[33.215822] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[33.216920] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[33.217968] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/dds_fastrtps\n'}
+[33.219224] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[33.222098] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[33.222774] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs\n'}
+[33.223353] (-) TimerEvent: {}
+[33.223986] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg\n'}
+[33.224783] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[33.225494] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail\n'}
+[33.225984] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_introspection_c.h\n'}
+[33.226627] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__rosidl_typesupport_introspection_c.h\n'}
+[33.227931] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__type_support.c\n'}
+[33.229188] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__type_support.c\n'}
+[33.230799] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_introspection_c.so\n'}
+[33.233475] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[33.234219] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_c.so\n'}
+[33.236593] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_c.so" to ""\n'}
+[33.237281] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs\n'}
+[33.237925] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg\n'}
+[33.238362] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/motion_ctrl.hpp\n'}
+[33.238879] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/leg_motors.hpp\n'}
+[33.239665] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail\n'}
+[33.240377] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__traits.hpp\n'}
+[33.241264] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__builder.hpp\n'}
+[33.242270] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__struct.hpp\n'}
+[33.243385] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__builder.hpp\n'}
+[33.244555] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__traits.hpp\n'}
+[33.245569] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__struct.hpp\n'}
+[33.246836] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs\n'}
+[33.247768] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg\n'}
+[33.248619] (motion_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail\n'}
+[33.249218] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__type_support.cpp\n'}
+[33.249969] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[33.251189] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__type_support.cpp\n'}
+[33.252672] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/include/motion_msgs/msg/detail/leg_motors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[33.254436] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[33.257545] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[33.258430] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_cpp.so\n'}
+[33.261264] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[33.262232] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/environment/pythonpath.sh\n'}
+[33.263229] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/environment/pythonpath.dsv\n'}
+[33.265092] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/__init__.py\n'}
+[33.323624] (-) TimerEvent: {}
+[33.424665] (-) TimerEvent: {}
+[33.459132] (motion_msgs) StdoutLine: {'line': b"Compiling '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/__init__.py'...\n"}
+[33.485344] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/msg\n'}
+[33.486000] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/msg/_motion_ctrl_s.c\n'}
+[33.486916] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/msg/__init__.py\n'}
+[33.487802] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/msg/_motion_ctrl.py\n'}
+[33.488882] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/msg/_leg_motors.py\n'}
+[33.489918] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/msg/_leg_motors_s.c\n'}
+[33.491797] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[33.495239] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[33.496483] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[33.500127] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[33.501223] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[33.504872] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[33.505517] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__python.so\n'}
+[33.507839] (motion_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/motion_msgs/lib/libmotion_msgs__python.so" to ""\n'}
+[33.508552] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/msg/LegMotors.idl\n'}
+[33.509665] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/msg/MotionCtrl.idl\n'}
+[33.510705] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/msg/LegMotors.msg\n'}
+[33.511753] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/msg/MotionCtrl.msg\n'}
+[33.513272] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/ament_index/resource_index/package_run_dependencies/motion_msgs\n'}
+[33.514754] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/ament_index/resource_index/parent_prefix_path/motion_msgs\n'}
+[33.515945] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/environment/ament_prefix_path.sh\n'}
+[33.517155] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/environment/ament_prefix_path.dsv\n'}
+[33.518252] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/environment/path.sh\n'}
+[33.519304] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/environment/path.dsv\n'}
+[33.520457] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/local_setup.bash\n'}
+[33.521474] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/local_setup.sh\n'}
+[33.522527] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/local_setup.zsh\n'}
+[33.523558] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/local_setup.dsv\n'}
+[33.524628] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/package.dsv\n'}
+[33.525072] (-) TimerEvent: {}
+[33.526164] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/ament_index/resource_index/packages/motion_msgs\n'}
+[33.527722] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_generator_cExport.cmake\n'}
+[33.529075] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[33.530506] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[33.531843] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[33.533366] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_cExport.cmake\n'}
+[33.534701] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[33.536191] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_generator_cppExport.cmake\n'}
+[33.537883] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[33.539306] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[33.540847] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[33.542172] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[33.543424] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[33.544632] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[33.545816] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[33.547032] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[33.548253] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[33.549500] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[33.550758] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[33.551916] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgsConfig.cmake\n'}
+[33.552880] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgsConfig-version.cmake\n'}
+[33.554021] (motion_msgs) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/package.xml\n'}
+[33.560866] (motion_msgs) CommandEnded: {'returncode': 0}
+[33.625386] (-) TimerEvent: {}
+[33.726360] (-) TimerEvent: {}
+[33.827161] (-) TimerEvent: {}
+[33.928415] (-) TimerEvent: {}
+[34.028545] (motion_msgs) JobEnded: {'identifier': 'motion_msgs', 'rc': 0}
+[34.036340] (-) TimerEvent: {}
+[34.036707] (diablo_utils) JobStarted: {'identifier': 'diablo_utils'}
+[34.073170] (diablo_utils) JobProgress: {'identifier': 'diablo_utils', 'progress': 'cmake'}
+[34.074271] (diablo_utils) Command: {'cmd': ['/usr/bin/cmake', '/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_common/diablo_utils', '-DCMAKE_INSTALL_PREFIX=/home/diablo/catkin_ws/install/diablo_utils'], 'cwd': '/home/diablo/catkin_ws/build/diablo_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_utils'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[34.136638] (-) TimerEvent: {}
+[34.237780] (-) TimerEvent: {}
+[34.336935] (diablo_utils) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[34.337775] (-) TimerEvent: {}
+[34.438673] (-) TimerEvent: {}
+[34.540094] (-) TimerEvent: {}
+[34.587709] (diablo_utils) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[34.608417] (diablo_utils) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[34.640237] (-) TimerEvent: {}
+[34.741044] (-) TimerEvent: {}
+[34.842228] (-) TimerEvent: {}
+[34.928349] (diablo_utils) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[34.931903] (diablo_utils) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[34.942367] (-) TimerEvent: {}
+[35.043201] (-) TimerEvent: {}
+[35.144074] (-) TimerEvent: {}
+[35.245108] (-) TimerEvent: {}
+[35.281954] (diablo_utils) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[35.327716] (diablo_utils) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[35.329201] (diablo_utils) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[35.340234] (diablo_utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[35.345258] (-) TimerEvent: {}
+[35.446044] (-) TimerEvent: {}
+[35.546900] (-) TimerEvent: {}
+[35.647775] (-) TimerEvent: {}
+[35.692383] (diablo_utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[35.696831] (diablo_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[35.747985] (-) TimerEvent: {}
+[35.849064] (-) TimerEvent: {}
+[35.950420] (-) TimerEvent: {}
+[36.051145] (-) TimerEvent: {}
+[36.065022] (diablo_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[36.109457] (diablo_utils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[36.111598] (diablo_utils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[36.137371] (diablo_utils) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[36.151305] (-) TimerEvent: {}
+[36.252130] (-) TimerEvent: {}
+[36.281547] (diablo_utils) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[36.282350] (diablo_utils) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[36.352309] (-) TimerEvent: {}
+[36.453229] (-) TimerEvent: {}
+[36.554343] (-) TimerEvent: {}
+[36.655196] (-) TimerEvent: {}
+[36.756453] (-) TimerEvent: {}
+[36.857281] (-) TimerEvent: {}
+[36.957928] (-) TimerEvent: {}
+[37.058591] (-) TimerEvent: {}
+[37.159284] (-) TimerEvent: {}
+[37.260194] (-) TimerEvent: {}
+[37.361152] (-) TimerEvent: {}
+[37.461896] (-) TimerEvent: {}
+[37.491541] (diablo_utils) StdoutLine: {'line': b'-- Found motion_msgs: 1.0.0 (/home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake)\n'}
+[37.562038] (-) TimerEvent: {}
+[37.663042] (-) TimerEvent: {}
+[37.764154] (-) TimerEvent: {}
+[37.778615] (diablo_utils) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[37.843652] (diablo_utils) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[37.864322] (-) TimerEvent: {}
+[37.965141] (-) TimerEvent: {}
+[38.066194] (-) TimerEvent: {}
+[38.166880] (-) TimerEvent: {}
+[38.267768] (-) TimerEvent: {}
+[38.368839] (-) TimerEvent: {}
+[38.470031] (-) TimerEvent: {}
+[38.504644] (diablo_utils) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[38.570227] (-) TimerEvent: {}
+[38.670967] (-) TimerEvent: {}
+[38.771720] (-) TimerEvent: {}
+[38.812302] (diablo_utils) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[38.871891] (-) TimerEvent: {}
+[38.972615] (-) TimerEvent: {}
+[39.073280] (-) TimerEvent: {}
+[39.174208] (-) TimerEvent: {}
+[39.275086] (-) TimerEvent: {}
+[39.375869] (-) TimerEvent: {}
+[39.476802] (-) TimerEvent: {}
+[39.517175] (diablo_utils) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[39.576960] (-) TimerEvent: {}
+[39.677902] (-) TimerEvent: {}
+[39.779429] (-) TimerEvent: {}
+[39.880443] (-) TimerEvent: {}
+[39.980340] (diablo_utils) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[39.980973] (-) TimerEvent: {}
+[40.081916] (-) TimerEvent: {}
+[40.182781] (-) TimerEvent: {}
+[40.283530] (-) TimerEvent: {}
+[40.317773] (diablo_utils) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[40.327486] (diablo_utils) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[40.334893] (diablo_utils) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[40.383743] (-) TimerEvent: {}
+[40.484679] (-) TimerEvent: {}
+[40.585473] (-) TimerEvent: {}
+[40.679304] (diablo_utils) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[40.680641] (diablo_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[40.685699] (-) TimerEvent: {}
+[40.786637] (-) TimerEvent: {}
+[40.887782] (-) TimerEvent: {}
+[40.988849] (-) TimerEvent: {}
+[41.029459] (diablo_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[41.030749] (diablo_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[41.089068] (-) TimerEvent: {}
+[41.189900] (-) TimerEvent: {}
+[41.290806] (-) TimerEvent: {}
+[41.304670] (diablo_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[41.305482] (diablo_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[41.391041] (-) TimerEvent: {}
+[41.492354] (-) TimerEvent: {}
+[41.593604] (-) TimerEvent: {}
+[41.670428] (diablo_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[41.674522] (diablo_utils) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[41.693788] (-) TimerEvent: {}
+[41.794534] (-) TimerEvent: {}
+[41.895234] (-) TimerEvent: {}
+[41.995979] (-) TimerEvent: {}
+[42.096761] (-) TimerEvent: {}
+[42.197630] (-) TimerEvent: {}
+[42.298412] (-) TimerEvent: {}
+[42.399294] (-) TimerEvent: {}
+[42.485212] (diablo_utils) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[42.499496] (-) TimerEvent: {}
+[42.600376] (-) TimerEvent: {}
+[42.701524] (-) TimerEvent: {}
+[42.802614] (-) TimerEvent: {}
+[42.904074] (-) TimerEvent: {}
+[43.000750] (diablo_utils) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.9 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[43.004179] (-) TimerEvent: {}
+[43.023578] (diablo_utils) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[43.043338] (diablo_utils) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[43.044249] (diablo_utils) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_common/diablo_utils/include\n'}
+[43.044822] (diablo_utils) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[43.063258] (diablo_utils) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[43.063859] (diablo_utils) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[43.073189] (diablo_utils) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[43.096180] (diablo_utils) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[43.096805] (diablo_utils) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[43.101301] (diablo_utils) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[43.104316] (-) TimerEvent: {}
+[43.137180] (diablo_utils) StdoutLine: {'line': b'-- Configuring done\n'}
+[43.173798] (diablo_utils) StdoutLine: {'line': b'-- Generating done\n'}
+[43.180413] (diablo_utils) StdoutLine: {'line': b'-- Build files have been written to: /home/diablo/catkin_ws/build/diablo_utils\n'}
+[43.204577] (-) TimerEvent: {}
+[43.211603] (diablo_utils) CommandEnded: {'returncode': 0}
+[43.213767] (diablo_utils) JobProgress: {'identifier': 'diablo_utils', 'progress': 'build'}
+[43.214840] (diablo_utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diablo/catkin_ws/build/diablo_utils', '--', '-j4', '-l4'], 'cwd': '/home/diablo/catkin_ws/build/diablo_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_utils'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[43.304848] (-) TimerEvent: {}
+[43.406232] (-) TimerEvent: {}
+[43.414983] (diablo_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target diablo_utils_core\x1b[0m\n'}
+[43.489842] (diablo_utils) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/diablo_utils_core.dir/src/SerialPort/SerialPort.cpp.o\x1b[0m\n'}
+[43.491171] (diablo_utils) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/diablo_utils_core.dir/src/diablo_tools/osdk_crc.cpp.o\x1b[0m\n'}
+[43.506447] (-) TimerEvent: {}
+[43.508663] (diablo_utils) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/diablo_utils_core.dir/src/diablo_tools/osdk_hal.cpp.o\x1b[0m\n'}
+[43.526357] (diablo_utils) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/diablo_utils_core.dir/src/diablo_tools/osdk_log.cpp.o\x1b[0m\n'}
+[43.606777] (-) TimerEvent: {}
+[43.707637] (-) TimerEvent: {}
+[43.808669] (-) TimerEvent: {}
+[43.910426] (-) TimerEvent: {}
+[44.012611] (-) TimerEvent: {}
+[44.114762] (-) TimerEvent: {}
+[44.216701] (-) TimerEvent: {}
+[44.318640] (-) TimerEvent: {}
+[44.420721] (-) TimerEvent: {}
+[44.522869] (-) TimerEvent: {}
+[44.628396] (-) TimerEvent: {}
+[44.736314] (-) TimerEvent: {}
+[44.844262] (-) TimerEvent: {}
+[44.945240] (-) TimerEvent: {}
+[45.052251] (-) TimerEvent: {}
+[45.160309] (-) TimerEvent: {}
+[45.261722] (-) TimerEvent: {}
+[45.287526] (diablo_utils) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/diablo_utils_core.dir/src/diablo_tools/osdk_movement.cpp.o\x1b[0m\n'}
+[45.361948] (-) TimerEvent: {}
+[45.463295] (-) TimerEvent: {}
+[45.564216] (-) TimerEvent: {}
+[45.665313] (-) TimerEvent: {}
+[45.766265] (-) TimerEvent: {}
+[45.867224] (-) TimerEvent: {}
+[45.972988] (-) TimerEvent: {}
+[46.075460] (-) TimerEvent: {}
+[46.177712] (-) TimerEvent: {}
+[46.279955] (-) TimerEvent: {}
+[46.382096] (-) TimerEvent: {}
+[46.484553] (-) TimerEvent: {}
+[46.586893] (-) TimerEvent: {}
+[46.689091] (-) TimerEvent: {}
+[46.791243] (-) TimerEvent: {}
+[46.893425] (-) TimerEvent: {}
+[46.995862] (-) TimerEvent: {}
+[47.098582] (-) TimerEvent: {}
+[47.201525] (-) TimerEvent: {}
+[47.303487] (-) TimerEvent: {}
+[47.333303] (diablo_utils) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/diablo_utils_core.dir/src/diablo_tools/osdk_telemetry.cpp.o\x1b[0m\n'}
+[47.403769] (-) TimerEvent: {}
+[47.505906] (-) TimerEvent: {}
+[47.607971] (-) TimerEvent: {}
+[47.710096] (-) TimerEvent: {}
+[47.812257] (-) TimerEvent: {}
+[47.914142] (-) TimerEvent: {}
+[47.952261] (diablo_utils) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/diablo_utils_core.dir/src/diablo_tools/osdk_vehicle.cpp.o\x1b[0m\n'}
+[48.014374] (-) TimerEvent: {}
+[48.116282] (-) TimerEvent: {}
+[48.218095] (-) TimerEvent: {}
+[48.320012] (-) TimerEvent: {}
+[48.422184] (-) TimerEvent: {}
+[48.524463] (-) TimerEvent: {}
+[48.626588] (-) TimerEvent: {}
+[48.728686] (-) TimerEvent: {}
+[48.830987] (-) TimerEvent: {}
+[48.933180] (-) TimerEvent: {}
+[49.035114] (-) TimerEvent: {}
+[49.137390] (-) TimerEvent: {}
+[49.239324] (-) TimerEvent: {}
+[49.341730] (-) TimerEvent: {}
+[49.443784] (-) TimerEvent: {}
+[49.535769] (diablo_utils) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/diablo_utils_core.dir/src/diablo_tools/osdk_virtual_rc.cpp.o\x1b[0m\n'}
+[49.544056] (-) TimerEvent: {}
+[49.647141] (-) TimerEvent: {}
+[49.749235] (-) TimerEvent: {}
+[49.853080] (-) TimerEvent: {}
+[49.956867] (-) TimerEvent: {}
+[50.060577] (-) TimerEvent: {}
+[50.162659] (-) TimerEvent: {}
+[50.268290] (-) TimerEvent: {}
+[50.372271] (-) TimerEvent: {}
+[50.474508] (-) TimerEvent: {}
+[50.576918] (-) TimerEvent: {}
+[50.678894] (-) TimerEvent: {}
+[50.780451] (-) TimerEvent: {}
+[50.881346] (-) TimerEvent: {}
+[50.982345] (-) TimerEvent: {}
+[51.083385] (-) TimerEvent: {}
+[51.184631] (-) TimerEvent: {}
+[51.285796] (-) TimerEvent: {}
+[51.386923] (-) TimerEvent: {}
+[51.488395] (-) TimerEvent: {}
+[51.589808] (-) TimerEvent: {}
+[51.693020] (-) TimerEvent: {}
+[51.794792] (-) TimerEvent: {}
+[51.897126] (-) TimerEvent: {}
+[51.998861] (-) TimerEvent: {}
+[52.099639] (-) TimerEvent: {}
+[52.200410] (-) TimerEvent: {}
+[52.301197] (-) TimerEvent: {}
+[52.401937] (-) TimerEvent: {}
+[52.502745] (-) TimerEvent: {}
+[52.603561] (-) TimerEvent: {}
+[52.704318] (-) TimerEvent: {}
+[52.805218] (-) TimerEvent: {}
+[52.809001] (diablo_utils) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiablo_utils_core.so\x1b[0m\n'}
+[52.905374] (-) TimerEvent: {}
+[53.006279] (-) TimerEvent: {}
+[53.107105] (-) TimerEvent: {}
+[53.208485] (-) TimerEvent: {}
+[53.310932] (-) TimerEvent: {}
+[53.412090] (-) TimerEvent: {}
+[53.512984] (-) TimerEvent: {}
+[53.539120] (diablo_utils) StdoutLine: {'line': b'[100%] Built target diablo_utils_core\n'}
+[53.584444] (diablo_utils) CommandEnded: {'returncode': 0}
+[53.613241] (-) TimerEvent: {}
+[53.714461] (-) TimerEvent: {}
+[53.766769] (diablo_utils) JobProgress: {'identifier': 'diablo_utils', 'progress': 'install'}
+[53.768135] (diablo_utils) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/diablo/catkin_ws/build/diablo_utils'], 'cwd': '/home/diablo/catkin_ws/build/diablo_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_utils'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[53.811322] (diablo_utils) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[53.812164] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include/\n'}
+[53.812723] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils\n'}
+[53.813218] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/VulcanSerial\n'}
+[53.813641] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/VulcanSerial/Exception.hpp\n'}
+[53.814191] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/VulcanSerial/SerialPort.hpp\n'}
+[53.814595] (-) TimerEvent: {}
+[53.815226] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools\n'}
+[53.815896] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/osdk_ddj_m15.hpp\n'}
+[53.816924] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/osdk_hal.hpp\n'}
+[53.817900] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/onboard_sdk_uart_protocol.h\n'}
+[53.818962] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/osdk_crc.hpp\n'}
+[53.819912] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/osdk_header.hpp\n'}
+[53.820930] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/osdk_movement.hpp\n'}
+[53.821885] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/osdk_virtual_rc.hpp\n'}
+[53.822825] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/osdk_vehicle.hpp\n'}
+[53.823760] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/include//diablo_utils/diablo_tools/osdk_telemetry.hpp\n'}
+[53.825473] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/lib/libdiablo_utils_core.so\n'}
+[53.829854] (diablo_utils) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/diablo_utils/lib/libdiablo_utils_core.so" to ""\n'}
+[53.830739] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/environment/library_path.sh\n'}
+[53.832186] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/environment/library_path.dsv\n'}
+[53.834032] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/ament_index/resource_index/package_run_dependencies/diablo_utils\n'}
+[53.835798] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/ament_index/resource_index/parent_prefix_path/diablo_utils\n'}
+[53.837373] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/environment/ament_prefix_path.sh\n'}
+[53.838618] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/environment/ament_prefix_path.dsv\n'}
+[53.839997] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/environment/path.sh\n'}
+[53.841380] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/environment/path.dsv\n'}
+[53.842605] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/local_setup.bash\n'}
+[53.843919] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/local_setup.sh\n'}
+[53.845373] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/local_setup.zsh\n'}
+[53.846637] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/local_setup.dsv\n'}
+[53.847979] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/package.dsv\n'}
+[53.849708] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/ament_index/resource_index/packages/diablo_utils\n'}
+[53.851422] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[53.852924] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[53.854213] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[53.855512] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/cmake/diablo_utilsConfig.cmake\n'}
+[53.856603] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/cmake/diablo_utilsConfig-version.cmake\n'}
+[53.857928] (diablo_utils) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/package.xml\n'}
+[53.864472] (diablo_utils) CommandEnded: {'returncode': 0}
+[53.916156] (-) TimerEvent: {}
+[54.018177] (-) TimerEvent: {}
+[54.119533] (-) TimerEvent: {}
+[54.157735] (diablo_utils) JobEnded: {'identifier': 'diablo_utils', 'rc': 0}
+[54.166505] (diablo_body) JobStarted: {'identifier': 'diablo_body'}
+[54.210999] (diablo_body) JobProgress: {'identifier': 'diablo_body', 'progress': 'cmake'}
+[54.212224] (diablo_body) Command: {'cmd': ['/usr/bin/cmake', '/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_ception/diablo_body', '-DCMAKE_INSTALL_PREFIX=/home/diablo/catkin_ws/install/diablo_body'], 'cwd': '/home/diablo/catkin_ws/build/diablo_body', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/diablo_utils/lib:/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_body'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[54.224402] (-) TimerEvent: {}
+[54.327301] (-) TimerEvent: {}
+[54.428175] (-) TimerEvent: {}
+[54.487246] (diablo_body) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[54.528383] (-) TimerEvent: {}
+[54.629500] (-) TimerEvent: {}
+[54.730500] (-) TimerEvent: {}
+[54.769177] (diablo_body) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[54.792719] (diablo_body) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[54.830703] (-) TimerEvent: {}
+[54.931667] (-) TimerEvent: {}
+[55.032960] (-) TimerEvent: {}
+[55.122580] (diablo_body) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[55.126203] (diablo_body) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[55.133129] (-) TimerEvent: {}
+[55.233989] (-) TimerEvent: {}
+[55.334877] (-) TimerEvent: {}
+[55.435668] (-) TimerEvent: {}
+[55.453783] (diablo_body) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[55.494720] (diablo_body) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[55.495955] (diablo_body) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[55.505629] (diablo_body) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[55.535949] (-) TimerEvent: {}
+[55.636701] (-) TimerEvent: {}
+[55.737519] (-) TimerEvent: {}
+[55.838303] (-) TimerEvent: {}
+[55.870860] (diablo_body) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[55.875005] (diablo_body) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[55.938515] (-) TimerEvent: {}
+[56.039332] (-) TimerEvent: {}
+[56.140214] (-) TimerEvent: {}
+[56.241026] (-) TimerEvent: {}
+[56.244866] (diablo_body) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[56.289784] (diablo_body) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[56.291904] (diablo_body) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[56.317456] (diablo_body) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[56.341169] (-) TimerEvent: {}
+[56.441943] (-) TimerEvent: {}
+[56.500461] (diablo_body) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[56.501813] (diablo_body) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[56.542114] (-) TimerEvent: {}
+[56.643370] (-) TimerEvent: {}
+[56.744848] (-) TimerEvent: {}
+[56.845530] (-) TimerEvent: {}
+[56.946208] (-) TimerEvent: {}
+[57.046867] (-) TimerEvent: {}
+[57.147559] (-) TimerEvent: {}
+[57.248367] (-) TimerEvent: {}
+[57.349187] (-) TimerEvent: {}
+[57.449916] (-) TimerEvent: {}
+[57.550631] (-) TimerEvent: {}
+[57.651329] (-) TimerEvent: {}
+[57.700077] (diablo_body) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[57.751595] (-) TimerEvent: {}
+[57.852636] (-) TimerEvent: {}
+[57.954989] (-) TimerEvent: {}
+[58.055700] (-) TimerEvent: {}
+[58.095850] (diablo_body) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[58.155839] (-) TimerEvent: {}
+[58.157634] (diablo_body) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[58.256009] (-) TimerEvent: {}
+[58.356745] (-) TimerEvent: {}
+[58.457520] (-) TimerEvent: {}
+[58.558356] (-) TimerEvent: {}
+[58.659251] (-) TimerEvent: {}
+[58.760147] (-) TimerEvent: {}
+[58.809393] (diablo_body) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[58.860295] (-) TimerEvent: {}
+[58.961128] (-) TimerEvent: {}
+[59.061953] (-) TimerEvent: {}
+[59.121979] (diablo_body) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[59.162135] (-) TimerEvent: {}
+[59.262896] (-) TimerEvent: {}
+[59.363627] (-) TimerEvent: {}
+[59.464418] (-) TimerEvent: {}
+[59.565315] (-) TimerEvent: {}
+[59.666632] (-) TimerEvent: {}
+[59.767477] (-) TimerEvent: {}
+[59.843490] (diablo_body) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[59.867626] (-) TimerEvent: {}
+[59.968374] (-) TimerEvent: {}
+[60.069089] (-) TimerEvent: {}
+[60.144613] (diablo_body) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[60.150878] (diablo_body) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[60.154595] (diablo_body) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[60.169241] (-) TimerEvent: {}
+[60.269952] (-) TimerEvent: {}
+[60.370754] (-) TimerEvent: {}
+[60.471945] (-) TimerEvent: {}
+[60.507836] (diablo_body) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[60.509105] (diablo_body) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[60.572197] (-) TimerEvent: {}
+[60.673199] (-) TimerEvent: {}
+[60.774344] (-) TimerEvent: {}
+[60.856206] (diablo_body) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[60.857170] (diablo_body) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[60.874609] (-) TimerEvent: {}
+[60.975878] (-) TimerEvent: {}
+[61.077066] (-) TimerEvent: {}
+[61.178540] (-) TimerEvent: {}
+[61.196833] (diablo_body) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[61.197800] (diablo_body) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[61.278736] (-) TimerEvent: {}
+[61.379571] (-) TimerEvent: {}
+[61.480529] (-) TimerEvent: {}
+[61.531700] (diablo_body) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[61.536811] (diablo_body) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[61.580714] (-) TimerEvent: {}
+[61.681563] (-) TimerEvent: {}
+[61.782417] (-) TimerEvent: {}
+[61.883130] (-) TimerEvent: {}
+[61.983837] (-) TimerEvent: {}
+[62.084606] (-) TimerEvent: {}
+[62.185504] (-) TimerEvent: {}
+[62.271936] (diablo_body) StdoutLine: {'line': b'-- Found motion_msgs: 1.0.0 (/home/diablo/catkin_ws/install/motion_msgs/share/motion_msgs/cmake)\n'}
+[62.285674] (-) TimerEvent: {}
+[62.386412] (-) TimerEvent: {}
+[62.459447] (diablo_body) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[62.486561] (-) TimerEvent: {}
+[62.587282] (-) TimerEvent: {}
+[62.688057] (-) TimerEvent: {}
+[62.788854] (-) TimerEvent: {}
+[62.889752] (-) TimerEvent: {}
+[62.991061] (-) TimerEvent: {}
+[63.014837] (diablo_body) StdoutLine: {'line': b'-- Found diablo_utils: 1.0.0 (/home/diablo/catkin_ws/install/diablo_utils/share/diablo_utils/cmake)\n'}
+[63.091232] (-) TimerEvent: {}
+[63.106240] (diablo_body) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[63.191380] (-) TimerEvent: {}
+[63.292046] (-) TimerEvent: {}
+[63.392749] (-) TimerEvent: {}
+[63.493595] (-) TimerEvent: {}
+[63.552966] (diablo_body) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.9 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[63.579913] (diablo_body) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[63.589264] (diablo_body) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[63.590472] (diablo_body) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_ception/diablo_body/include\n'}
+[63.591135] (diablo_body) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[63.593765] (-) TimerEvent: {}
+[63.598930] (diablo_body) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[63.599612] (diablo_body) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[63.604312] (diablo_body) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[63.613557] (diablo_body) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[63.614256] (diablo_body) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[63.617064] (diablo_body) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[63.659424] (diablo_body) StdoutLine: {'line': b'-- Configuring done\n'}
+[63.693915] (-) TimerEvent: {}
+[63.719762] (diablo_body) StdoutLine: {'line': b'-- Generating done\n'}
+[63.727797] (diablo_body) StdoutLine: {'line': b'-- Build files have been written to: /home/diablo/catkin_ws/build/diablo_body\n'}
+[63.766487] (diablo_body) CommandEnded: {'returncode': 0}
+[63.769025] (diablo_body) JobProgress: {'identifier': 'diablo_body', 'progress': 'build'}
+[63.770399] (diablo_body) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diablo/catkin_ws/build/diablo_body', '--', '-j4', '-l4'], 'cwd': '/home/diablo/catkin_ws/build/diablo_body', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/diablo_utils/lib:/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_body'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[63.794187] (-) TimerEvent: {}
+[63.895031] (-) TimerEvent: {}
+[63.976364] (diablo_body) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target diablo_body_core\x1b[0m\n'}
+[63.995193] (-) TimerEvent: {}
+[64.095943] (-) TimerEvent: {}
+[64.196764] (-) TimerEvent: {}
+[64.297665] (-) TimerEvent: {}
+[64.399181] (-) TimerEvent: {}
+[64.490438] (diablo_body) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/diablo_body_core.dir/src/diablo_imu.cpp.o\x1b[0m\n'}
+[64.492645] (diablo_body) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/diablo_body_core.dir/src/diablo_battery.cpp.o\x1b[0m\n'}
+[64.497268] (diablo_body) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/diablo_body_core.dir/src/diablo_legmotors.cpp.o\x1b[0m\n'}
+[64.499346] (-) TimerEvent: {}
+[64.600201] (-) TimerEvent: {}
+[64.704269] (-) TimerEvent: {}
+[64.805019] (-) TimerEvent: {}
+[64.906213] (-) TimerEvent: {}
+[65.008320] (-) TimerEvent: {}
+[65.109812] (-) TimerEvent: {}
+[65.210903] (-) TimerEvent: {}
+[65.313875] (-) TimerEvent: {}
+[65.414764] (-) TimerEvent: {}
+[65.524258] (-) TimerEvent: {}
+[65.632240] (-) TimerEvent: {}
+[65.744215] (-) TimerEvent: {}
+[65.846037] (-) TimerEvent: {}
+[65.948125] (-) TimerEvent: {}
+[66.050500] (-) TimerEvent: {}
+[66.152643] (-) TimerEvent: {}
+[66.254844] (-) TimerEvent: {}
+[66.356443] (-) TimerEvent: {}
+[66.458120] (-) TimerEvent: {}
+[66.559258] (-) TimerEvent: {}
+[66.660341] (-) TimerEvent: {}
+[66.761181] (-) TimerEvent: {}
+[66.862424] (-) TimerEvent: {}
+[66.963697] (-) TimerEvent: {}
+[67.072288] (-) TimerEvent: {}
+[67.180233] (-) TimerEvent: {}
+[67.288250] (-) TimerEvent: {}
+[67.396290] (-) TimerEvent: {}
+[67.504311] (-) TimerEvent: {}
+[67.612328] (-) TimerEvent: {}
+[67.720240] (-) TimerEvent: {}
+[67.828248] (-) TimerEvent: {}
+[67.936258] (-) TimerEvent: {}
+[68.048222] (-) TimerEvent: {}
+[68.149188] (-) TimerEvent: {}
+[68.250302] (-) TimerEvent: {}
+[68.351913] (-) TimerEvent: {}
+[68.452871] (-) TimerEvent: {}
+[68.554063] (-) TimerEvent: {}
+[68.656225] (-) TimerEvent: {}
+[68.758181] (-) TimerEvent: {}
+[68.860215] (-) TimerEvent: {}
+[68.961347] (-) TimerEvent: {}
+[69.062264] (-) TimerEvent: {}
+[69.163171] (-) TimerEvent: {}
+[69.272265] (-) TimerEvent: {}
+[69.376226] (-) TimerEvent: {}
+[69.484227] (-) TimerEvent: {}
+[69.592267] (-) TimerEvent: {}
+[69.700259] (-) TimerEvent: {}
+[69.802191] (-) TimerEvent: {}
+[69.904241] (-) TimerEvent: {}
+[70.006224] (-) TimerEvent: {}
+[70.108158] (-) TimerEvent: {}
+[70.210385] (-) TimerEvent: {}
+[70.312511] (-) TimerEvent: {}
+[70.415791] (-) TimerEvent: {}
+[70.518395] (-) TimerEvent: {}
+[70.620384] (-) TimerEvent: {}
+[70.722224] (-) TimerEvent: {}
+[70.824145] (-) TimerEvent: {}
+[70.925923] (-) TimerEvent: {}
+[71.026930] (-) TimerEvent: {}
+[71.129127] (-) TimerEvent: {}
+[71.231304] (-) TimerEvent: {}
+[71.333601] (-) TimerEvent: {}
+[71.435632] (-) TimerEvent: {}
+[71.537674] (-) TimerEvent: {}
+[71.639723] (-) TimerEvent: {}
+[71.741654] (-) TimerEvent: {}
+[71.843645] (-) TimerEvent: {}
+[71.945738] (-) TimerEvent: {}
+[72.047668] (-) TimerEvent: {}
+[72.149843] (-) TimerEvent: {}
+[72.252823] (-) TimerEvent: {}
+[72.355607] (-) TimerEvent: {}
+[72.457681] (-) TimerEvent: {}
+[72.564373] (-) TimerEvent: {}
+[72.666615] (-) TimerEvent: {}
+[72.772310] (-) TimerEvent: {}
+[72.873369] (-) TimerEvent: {}
+[72.974302] (-) TimerEvent: {}
+[73.075227] (-) TimerEvent: {}
+[73.176356] (-) TimerEvent: {}
+[73.284251] (-) TimerEvent: {}
+[73.392246] (-) TimerEvent: {}
+[73.504338] (-) TimerEvent: {}
+[73.605856] (-) TimerEvent: {}
+[73.707003] (-) TimerEvent: {}
+[73.808152] (-) TimerEvent: {}
+[73.909113] (-) TimerEvent: {}
+[74.010114] (-) TimerEvent: {}
+[74.111122] (-) TimerEvent: {}
+[74.212084] (-) TimerEvent: {}
+[74.313065] (-) TimerEvent: {}
+[74.416279] (-) TimerEvent: {}
+[74.517399] (-) TimerEvent: {}
+[74.618720] (-) TimerEvent: {}
+[74.720117] (-) TimerEvent: {}
+[74.821201] (-) TimerEvent: {}
+[74.922205] (-) TimerEvent: {}
+[75.023244] (-) TimerEvent: {}
+[75.124324] (-) TimerEvent: {}
+[75.232510] (-) TimerEvent: {}
+[75.337853] (-) TimerEvent: {}
+[75.444265] (-) TimerEvent: {}
+[75.552250] (-) TimerEvent: {}
+[75.653240] (-) TimerEvent: {}
+[75.754589] (-) TimerEvent: {}
+[75.856314] (-) TimerEvent: {}
+[75.960313] (-) TimerEvent: {}
+[76.068271] (-) TimerEvent: {}
+[76.170498] (-) TimerEvent: {}
+[76.271433] (-) TimerEvent: {}
+[76.372453] (-) TimerEvent: {}
+[76.473617] (-) TimerEvent: {}
+[76.574879] (-) TimerEvent: {}
+[76.676628] (-) TimerEvent: {}
+[76.777682] (-) TimerEvent: {}
+[76.878737] (-) TimerEvent: {}
+[76.980776] (-) TimerEvent: {}
+[77.084274] (-) TimerEvent: {}
+[77.189002] (-) TimerEvent: {}
+[77.290419] (-) TimerEvent: {}
+[77.391365] (-) TimerEvent: {}
+[77.492401] (-) TimerEvent: {}
+[77.593359] (-) TimerEvent: {}
+[77.694268] (-) TimerEvent: {}
+[77.795176] (-) TimerEvent: {}
+[77.896329] (-) TimerEvent: {}
+[78.001614] (-) TimerEvent: {}
+[78.104106] (-) TimerEvent: {}
+[78.206228] (-) TimerEvent: {}
+[78.308273] (-) TimerEvent: {}
+[78.411116] (-) TimerEvent: {}
+[78.513183] (-) TimerEvent: {}
+[78.615516] (-) TimerEvent: {}
+[78.720301] (-) TimerEvent: {}
+[78.821887] (-) TimerEvent: {}
+[78.925828] (-) TimerEvent: {}
+[79.032311] (-) TimerEvent: {}
+[79.134687] (-) TimerEvent: {}
+[79.237133] (-) TimerEvent: {}
+[79.339332] (-) TimerEvent: {}
+[79.440132] (-) TimerEvent: {}
+[79.541029] (-) TimerEvent: {}
+[79.643077] (-) TimerEvent: {}
+[79.752238] (-) TimerEvent: {}
+[79.860265] (-) TimerEvent: {}
+[79.968272] (-) TimerEvent: {}
+[80.076269] (-) TimerEvent: {}
+[80.177398] (-) TimerEvent: {}
+[80.280234] (-) TimerEvent: {}
+[80.381253] (-) TimerEvent: {}
+[80.483301] (-) TimerEvent: {}
+[80.584275] (-) TimerEvent: {}
+[80.685448] (-) TimerEvent: {}
+[80.786368] (-) TimerEvent: {}
+[80.888596] (-) TimerEvent: {}
+[80.996276] (-) TimerEvent: {}
+[81.104312] (-) TimerEvent: {}
+[81.205375] (-) TimerEvent: {}
+[81.306401] (-) TimerEvent: {}
+[81.407476] (-) TimerEvent: {}
+[81.508418] (-) TimerEvent: {}
+[81.609302] (-) TimerEvent: {}
+[81.710013] (-) TimerEvent: {}
+[81.810755] (-) TimerEvent: {}
+[81.911829] (-) TimerEvent: {}
+[82.013055] (-) TimerEvent: {}
+[82.114479] (-) TimerEvent: {}
+[82.215410] (-) TimerEvent: {}
+[82.324584] (-) TimerEvent: {}
+[82.428552] (-) TimerEvent: {}
+[82.540129] (-) TimerEvent: {}
+[82.642095] (-) TimerEvent: {}
+[82.742086] (diablo_body) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiablo_body_core.so\x1b[0m\n'}
+[82.745015] (-) TimerEvent: {}
+[82.845744] (-) TimerEvent: {}
+[82.946641] (-) TimerEvent: {}
+[83.047464] (-) TimerEvent: {}
+[83.148686] (-) TimerEvent: {}
+[83.250417] (-) TimerEvent: {}
+[83.351499] (-) TimerEvent: {}
+[83.452336] (-) TimerEvent: {}
+[83.553395] (-) TimerEvent: {}
+[83.654395] (-) TimerEvent: {}
+[83.755364] (-) TimerEvent: {}
+[83.856115] (-) TimerEvent: {}
+[83.957003] (-) TimerEvent: {}
+[84.058491] (-) TimerEvent: {}
+[84.159702] (-) TimerEvent: {}
+[84.161650] (diablo_body) StdoutLine: {'line': b'[100%] Built target diablo_body_core\n'}
+[84.215591] (diablo_body) CommandEnded: {'returncode': 0}
+[84.260169] (-) TimerEvent: {}
+[84.355123] (diablo_body) JobProgress: {'identifier': 'diablo_body', 'progress': 'install'}
+[84.356483] (diablo_body) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/diablo/catkin_ws/build/diablo_body'], 'cwd': '/home/diablo/catkin_ws/build/diablo_body', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/diablo_utils/lib:/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_body'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[84.367210] (-) TimerEvent: {}
+[84.402227] (diablo_body) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[84.403922] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/include/\n'}
+[84.404414] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/include//diablo_battery.hpp\n'}
+[84.404974] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/include//diablo_legmotors.hpp\n'}
+[84.406326] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/include//diablo_imu.hpp\n'}
+[84.408296] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/lib/libdiablo_body_core.so\n'}
+[84.423890] (diablo_body) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/diablo_body/lib/libdiablo_body_core.so" to ""\n'}
+[84.424738] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/environment/library_path.sh\n'}
+[84.425933] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/environment/library_path.dsv\n'}
+[84.428312] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/ament_index/resource_index/package_run_dependencies/diablo_body\n'}
+[84.430336] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/ament_index/resource_index/parent_prefix_path/diablo_body\n'}
+[84.432087] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/environment/ament_prefix_path.sh\n'}
+[84.433243] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/environment/ament_prefix_path.dsv\n'}
+[84.434842] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/environment/path.sh\n'}
+[84.435935] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/environment/path.dsv\n'}
+[84.437593] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/local_setup.bash\n'}
+[84.439140] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/local_setup.sh\n'}
+[84.440776] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/local_setup.zsh\n'}
+[84.442352] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/local_setup.dsv\n'}
+[84.443907] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/package.dsv\n'}
+[84.445874] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/ament_index/resource_index/packages/diablo_body\n'}
+[84.447325] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[84.449221] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[84.451177] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[84.453014] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/cmake/diablo_bodyConfig.cmake\n'}
+[84.454510] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/cmake/diablo_bodyConfig-version.cmake\n'}
+[84.456322] (diablo_body) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_body/share/diablo_body/package.xml\n'}
+[84.463364] (diablo_body) CommandEnded: {'returncode': 0}
+[84.470595] (-) TimerEvent: {}
+[84.571552] (-) TimerEvent: {}
+[84.673085] (-) TimerEvent: {}
+[84.685876] (diablo_body) JobEnded: {'identifier': 'diablo_body', 'rc': 0}
+[84.695204] (diablo_ctrl) JobStarted: {'identifier': 'diablo_ctrl'}
+[84.759395] (diablo_ctrl) JobProgress: {'identifier': 'diablo_ctrl', 'progress': 'cmake'}
+[84.760893] (diablo_ctrl) Command: {'cmd': ['/usr/bin/cmake', '/home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interaction/diablo_ctrl', '-DCMAKE_INSTALL_PREFIX=/home/diablo/catkin_ws/install/diablo_ctrl'], 'cwd': '/home/diablo/catkin_ws/build/diablo_ctrl', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/diablo_body/lib:/home/diablo/catkin_ws/install/diablo_utils/lib:/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_body:/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_ctrl'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_body:/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[84.773362] (-) TimerEvent: {}
+[84.876394] (-) TimerEvent: {}
+[84.977233] (-) TimerEvent: {}
+[85.057141] (diablo_ctrl) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[85.077433] (-) TimerEvent: {}
+[85.178394] (-) TimerEvent: {}
+[85.279648] (-) TimerEvent: {}
+[85.321273] (diablo_ctrl) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[85.343838] (diablo_ctrl) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[85.379823] (-) TimerEvent: {}
+[85.480695] (-) TimerEvent: {}
+[85.581851] (-) TimerEvent: {}
+[85.682870] (-) TimerEvent: {}
+[85.708903] (diablo_ctrl) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[85.713131] (diablo_ctrl) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[85.783100] (-) TimerEvent: {}
+[85.885201] (-) TimerEvent: {}
+[85.986079] (-) TimerEvent: {}
+[86.058246] (diablo_ctrl) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[86.086242] (-) TimerEvent: {}
+[86.099351] (diablo_ctrl) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[86.100674] (diablo_ctrl) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[86.110480] (diablo_ctrl) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[86.186430] (-) TimerEvent: {}
+[86.287252] (-) TimerEvent: {}
+[86.388161] (-) TimerEvent: {}
+[86.486813] (diablo_ctrl) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[86.488332] (-) TimerEvent: {}
+[86.491648] (diablo_ctrl) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[86.588498] (-) TimerEvent: {}
+[86.689302] (-) TimerEvent: {}
+[86.790228] (-) TimerEvent: {}
+[86.870271] (diablo_ctrl) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[86.890415] (-) TimerEvent: {}
+[86.916373] (diablo_ctrl) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[86.918486] (diablo_ctrl) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[86.941306] (diablo_ctrl) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[86.990615] (-) TimerEvent: {}
+[87.073390] (diablo_ctrl) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[87.074236] (diablo_ctrl) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[87.090844] (-) TimerEvent: {}
+[87.191833] (-) TimerEvent: {}
+[87.293115] (-) TimerEvent: {}
+[87.393925] (-) TimerEvent: {}
+[87.494639] (-) TimerEvent: {}
+[87.595342] (-) TimerEvent: {}
+[87.696078] (-) TimerEvent: {}
+[87.796797] (-) TimerEvent: {}
+[87.897554] (-) TimerEvent: {}
+[87.998361] (-) TimerEvent: {}
+[88.099187] (-) TimerEvent: {}
+[88.199921] (-) TimerEvent: {}
+[88.300681] (-) TimerEvent: {}
+[88.401369] (-) TimerEvent: {}
+[88.502078] (-) TimerEvent: {}
+[88.602857] (-) TimerEvent: {}
+[88.704336] (-) TimerEvent: {}
+[88.805232] (-) TimerEvent: {}
+[88.905958] (-) TimerEvent: {}
+[88.994096] (diablo_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[89.006076] (-) TimerEvent: {}
+[89.063976] (diablo_ctrl) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[89.106279] (-) TimerEvent: {}
+[89.206954] (-) TimerEvent: {}
+[89.307688] (-) TimerEvent: {}
+[89.408451] (-) TimerEvent: {}
+[89.509390] (-) TimerEvent: {}
+[89.610252] (-) TimerEvent: {}
+[89.711116] (-) TimerEvent: {}
+[89.745320] (diablo_ctrl) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[89.811300] (-) TimerEvent: {}
+[89.911979] (-) TimerEvent: {}
+[90.012693] (-) TimerEvent: {}
+[90.065697] (diablo_ctrl) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[90.112867] (-) TimerEvent: {}
+[90.213576] (-) TimerEvent: {}
+[90.314350] (-) TimerEvent: {}
+[90.415259] (-) TimerEvent: {}
+[90.516196] (-) TimerEvent: {}
+[90.616989] (-) TimerEvent: {}
+[90.717853] (-) TimerEvent: {}
+[90.789865] (diablo_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[90.818017] (-) TimerEvent: {}
+[90.918709] (-) TimerEvent: {}
+[91.019413] (-) TimerEvent: {}
+[91.119275] (diablo_ctrl) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[91.119901] (-) TimerEvent: {}
+[91.127271] (diablo_ctrl) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[91.132085] (diablo_ctrl) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[91.220118] (-) TimerEvent: {}
+[91.320840] (-) TimerEvent: {}
+[91.421623] (-) TimerEvent: {}
+[91.494458] (diablo_ctrl) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[91.495720] (diablo_ctrl) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[91.521776] (-) TimerEvent: {}
+[91.622605] (-) TimerEvent: {}
+[91.723441] (-) TimerEvent: {}
+[91.824588] (-) TimerEvent: {}
+[91.883187] (diablo_ctrl) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[91.884228] (diablo_ctrl) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[91.924748] (-) TimerEvent: {}
+[92.025578] (-) TimerEvent: {}
+[92.126920] (-) TimerEvent: {}
+[92.179349] (diablo_ctrl) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[92.180182] (diablo_ctrl) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[92.227106] (-) TimerEvent: {}
+[92.328005] (-) TimerEvent: {}
+[92.429242] (-) TimerEvent: {}
+[92.521709] (diablo_ctrl) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[92.526374] (diablo_ctrl) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[92.529397] (-) TimerEvent: {}
+[92.630148] (-) TimerEvent: {}
+[92.730900] (-) TimerEvent: {}
+[92.831672] (-) TimerEvent: {}
+[92.932492] (-) TimerEvent: {}
+[93.033186] (-) TimerEvent: {}
+[93.133861] (-) TimerEvent: {}
+[93.234574] (-) TimerEvent: {}
+[93.302636] (diablo_ctrl) StdoutLine: {'line': b'-- Found diablo_body: 1.0.0 (/home/diablo/catkin_ws/install/diablo_body/share/diablo_body/cmake)\n'}
+[93.334805] (-) TimerEvent: {}
+[93.435784] (-) TimerEvent: {}
+[93.536796] (-) TimerEvent: {}
+[93.637577] (-) TimerEvent: {}
+[93.738285] (-) TimerEvent: {}
+[93.839002] (-) TimerEvent: {}
+[93.939744] (-) TimerEvent: {}
+[94.040589] (-) TimerEvent: {}
+[94.141744] (-) TimerEvent: {}
+[94.242516] (-) TimerEvent: {}
+[94.343284] (-) TimerEvent: {}
+[94.371953] (diablo_ctrl) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[94.443527] (-) TimerEvent: {}
+[94.544400] (-) TimerEvent: {}
+[94.645313] (-) TimerEvent: {}
+[94.746312] (-) TimerEvent: {}
+[94.847364] (-) TimerEvent: {}
+[94.883269] (diablo_ctrl) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[94.894319] (diablo_ctrl) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[94.895183] (diablo_ctrl) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/diablo/catkin_ws/src/diablo_sdk_v2/diablo_interaction/diablo_ctrl/include\n'}
+[94.895757] (diablo_ctrl) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[94.899217] (diablo_ctrl) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[94.899780] (diablo_ctrl) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[94.903501] (diablo_ctrl) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[94.910265] (diablo_ctrl) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[94.910837] (diablo_ctrl) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[94.913141] (diablo_ctrl) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[94.947018] (diablo_ctrl) StdoutLine: {'line': b'-- Configuring done\n'}
+[94.947551] (-) TimerEvent: {}
+[95.043750] (diablo_ctrl) StdoutLine: {'line': b'-- Generating done\n'}
+[95.047814] (-) TimerEvent: {}
+[95.051962] (diablo_ctrl) StdoutLine: {'line': b'-- Build files have been written to: /home/diablo/catkin_ws/build/diablo_ctrl\n'}
+[95.090281] (diablo_ctrl) CommandEnded: {'returncode': 0}
+[95.093439] (diablo_ctrl) JobProgress: {'identifier': 'diablo_ctrl', 'progress': 'build'}
+[95.098106] (diablo_ctrl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diablo/catkin_ws/build/diablo_ctrl', '--', '-j4', '-l4'], 'cwd': '/home/diablo/catkin_ws/build/diablo_ctrl', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/diablo_body/lib:/home/diablo/catkin_ws/install/diablo_utils/lib:/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_body:/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_ctrl'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_body:/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[95.148146] (-) TimerEvent: {}
+[95.249022] (-) TimerEvent: {}
+[95.312326] (diablo_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target diablo_ctrl_node\x1b[0m\n'}
+[95.349200] (-) TimerEvent: {}
+[95.449952] (-) TimerEvent: {}
+[95.550682] (-) TimerEvent: {}
+[95.557264] (diablo_ctrl) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/diablo_ctrl_node.dir/src/diablo_ctrl.cpp.o\x1b[0m\n'}
+[95.650890] (-) TimerEvent: {}
+[95.751814] (-) TimerEvent: {}
+[95.852584] (-) TimerEvent: {}
+[95.953270] (-) TimerEvent: {}
+[96.054025] (-) TimerEvent: {}
+[96.154893] (-) TimerEvent: {}
+[96.255754] (-) TimerEvent: {}
+[96.356683] (-) TimerEvent: {}
+[96.457757] (-) TimerEvent: {}
+[96.558869] (-) TimerEvent: {}
+[96.659649] (-) TimerEvent: {}
+[96.760449] (-) TimerEvent: {}
+[96.861256] (-) TimerEvent: {}
+[96.961992] (-) TimerEvent: {}
+[97.062875] (-) TimerEvent: {}
+[97.163664] (-) TimerEvent: {}
+[97.264559] (-) TimerEvent: {}
+[97.365378] (-) TimerEvent: {}
+[97.466218] (-) TimerEvent: {}
+[97.567027] (-) TimerEvent: {}
+[97.667903] (-) TimerEvent: {}
+[97.768790] (-) TimerEvent: {}
+[97.869703] (-) TimerEvent: {}
+[97.970901] (-) TimerEvent: {}
+[98.072280] (-) TimerEvent: {}
+[98.173060] (-) TimerEvent: {}
+[98.273843] (-) TimerEvent: {}
+[98.374685] (-) TimerEvent: {}
+[98.475542] (-) TimerEvent: {}
+[98.576320] (-) TimerEvent: {}
+[98.677081] (-) TimerEvent: {}
+[98.777874] (-) TimerEvent: {}
+[98.878643] (-) TimerEvent: {}
+[98.979441] (-) TimerEvent: {}
+[99.080297] (-) TimerEvent: {}
+[99.181473] (-) TimerEvent: {}
+[99.282721] (-) TimerEvent: {}
+[99.384385] (-) TimerEvent: {}
+[99.485200] (-) TimerEvent: {}
+[99.586059] (-) TimerEvent: {}
+[99.686970] (-) TimerEvent: {}
+[99.788352] (-) TimerEvent: {}
+[99.889255] (-) TimerEvent: {}
+[99.990080] (-) TimerEvent: {}
+[100.090822] (-) TimerEvent: {}
+[100.191577] (-) TimerEvent: {}
+[100.292419] (-) TimerEvent: {}
+[100.393229] (-) TimerEvent: {}
+[100.494171] (-) TimerEvent: {}
+[100.595530] (-) TimerEvent: {}
+[100.696382] (-) TimerEvent: {}
+[100.797144] (-) TimerEvent: {}
+[100.898302] (-) TimerEvent: {}
+[100.999102] (-) TimerEvent: {}
+[101.100445] (-) TimerEvent: {}
+[101.202019] (-) TimerEvent: {}
+[101.303385] (-) TimerEvent: {}
+[101.404380] (-) TimerEvent: {}
+[101.505163] (-) TimerEvent: {}
+[101.606062] (-) TimerEvent: {}
+[101.706828] (-) TimerEvent: {}
+[101.807595] (-) TimerEvent: {}
+[101.908397] (-) TimerEvent: {}
+[102.009211] (-) TimerEvent: {}
+[102.109979] (-) TimerEvent: {}
+[102.210738] (-) TimerEvent: {}
+[102.311555] (-) TimerEvent: {}
+[102.412380] (-) TimerEvent: {}
+[102.513254] (-) TimerEvent: {}
+[102.614098] (-) TimerEvent: {}
+[102.714957] (-) TimerEvent: {}
+[102.815787] (-) TimerEvent: {}
+[102.916888] (-) TimerEvent: {}
+[103.018249] (-) TimerEvent: {}
+[103.119445] (-) TimerEvent: {}
+[103.220329] (-) TimerEvent: {}
+[103.321094] (-) TimerEvent: {}
+[103.421838] (-) TimerEvent: {}
+[103.522565] (-) TimerEvent: {}
+[103.623360] (-) TimerEvent: {}
+[103.724187] (-) TimerEvent: {}
+[103.825049] (-) TimerEvent: {}
+[103.925914] (-) TimerEvent: {}
+[104.026823] (-) TimerEvent: {}
+[104.128083] (-) TimerEvent: {}
+[104.228862] (-) TimerEvent: {}
+[104.329751] (-) TimerEvent: {}
+[104.430848] (-) TimerEvent: {}
+[104.531882] (-) TimerEvent: {}
+[104.632992] (-) TimerEvent: {}
+[104.733814] (-) TimerEvent: {}
+[104.834828] (-) TimerEvent: {}
+[104.936309] (-) TimerEvent: {}
+[105.037768] (-) TimerEvent: {}
+[105.138587] (-) TimerEvent: {}
+[105.239333] (-) TimerEvent: {}
+[105.340179] (-) TimerEvent: {}
+[105.441058] (-) TimerEvent: {}
+[105.542098] (-) TimerEvent: {}
+[105.643093] (-) TimerEvent: {}
+[105.743906] (-) TimerEvent: {}
+[105.844752] (-) TimerEvent: {}
+[105.945526] (-) TimerEvent: {}
+[106.046319] (-) TimerEvent: {}
+[106.147187] (-) TimerEvent: {}
+[106.248716] (-) TimerEvent: {}
+[106.350642] (-) TimerEvent: {}
+[106.451534] (-) TimerEvent: {}
+[106.552318] (-) TimerEvent: {}
+[106.653178] (-) TimerEvent: {}
+[106.753973] (-) TimerEvent: {}
+[106.854761] (-) TimerEvent: {}
+[106.955622] (-) TimerEvent: {}
+[107.056533] (-) TimerEvent: {}
+[107.157332] (-) TimerEvent: {}
+[107.258145] (-) TimerEvent: {}
+[107.359002] (-) TimerEvent: {}
+[107.459863] (-) TimerEvent: {}
+[107.560696] (-) TimerEvent: {}
+[107.661924] (-) TimerEvent: {}
+[107.762788] (-) TimerEvent: {}
+[107.863825] (-) TimerEvent: {}
+[107.964643] (-) TimerEvent: {}
+[108.065443] (-) TimerEvent: {}
+[108.166333] (-) TimerEvent: {}
+[108.267143] (-) TimerEvent: {}
+[108.367943] (-) TimerEvent: {}
+[108.468711] (-) TimerEvent: {}
+[108.569489] (-) TimerEvent: {}
+[108.670243] (-) TimerEvent: {}
+[108.771009] (-) TimerEvent: {}
+[108.871805] (-) TimerEvent: {}
+[108.972618] (-) TimerEvent: {}
+[109.073456] (-) TimerEvent: {}
+[109.174316] (-) TimerEvent: {}
+[109.275072] (-) TimerEvent: {}
+[109.375992] (-) TimerEvent: {}
+[109.477208] (-) TimerEvent: {}
+[109.578469] (-) TimerEvent: {}
+[109.679458] (-) TimerEvent: {}
+[109.780667] (-) TimerEvent: {}
+[109.881670] (-) TimerEvent: {}
+[109.982613] (-) TimerEvent: {}
+[110.083376] (-) TimerEvent: {}
+[110.184375] (-) TimerEvent: {}
+[110.285411] (-) TimerEvent: {}
+[110.386229] (-) TimerEvent: {}
+[110.487455] (-) TimerEvent: {}
+[110.588285] (-) TimerEvent: {}
+[110.689505] (-) TimerEvent: {}
+[110.790434] (-) TimerEvent: {}
+[110.891748] (-) TimerEvent: {}
+[110.992870] (-) TimerEvent: {}
+[111.094007] (-) TimerEvent: {}
+[111.194813] (-) TimerEvent: {}
+[111.295606] (-) TimerEvent: {}
+[111.396683] (-) TimerEvent: {}
+[111.498114] (-) TimerEvent: {}
+[111.598891] (-) TimerEvent: {}
+[111.699628] (-) TimerEvent: {}
+[111.800418] (-) TimerEvent: {}
+[111.901167] (-) TimerEvent: {}
+[112.002019] (-) TimerEvent: {}
+[112.102874] (-) TimerEvent: {}
+[112.203691] (-) TimerEvent: {}
+[112.304526] (-) TimerEvent: {}
+[112.405303] (-) TimerEvent: {}
+[112.506103] (-) TimerEvent: {}
+[112.607486] (-) TimerEvent: {}
+[112.709469] (-) TimerEvent: {}
+[112.811001] (-) TimerEvent: {}
+[112.911956] (-) TimerEvent: {}
+[113.013425] (-) TimerEvent: {}
+[113.114209] (-) TimerEvent: {}
+[113.214987] (-) TimerEvent: {}
+[113.315789] (-) TimerEvent: {}
+[113.416707] (-) TimerEvent: {}
+[113.517939] (-) TimerEvent: {}
+[113.619206] (-) TimerEvent: {}
+[113.720648] (-) TimerEvent: {}
+[113.821469] (-) TimerEvent: {}
+[113.922308] (-) TimerEvent: {}
+[114.023432] (-) TimerEvent: {}
+[114.124682] (-) TimerEvent: {}
+[114.226150] (-) TimerEvent: {}
+[114.328211] (-) TimerEvent: {}
+[114.429022] (-) TimerEvent: {}
+[114.529861] (-) TimerEvent: {}
+[114.630890] (-) TimerEvent: {}
+[114.731779] (-) TimerEvent: {}
+[114.832569] (-) TimerEvent: {}
+[114.933343] (-) TimerEvent: {}
+[115.034098] (-) TimerEvent: {}
+[115.134885] (-) TimerEvent: {}
+[115.235711] (-) TimerEvent: {}
+[115.336507] (-) TimerEvent: {}
+[115.437358] (-) TimerEvent: {}
+[115.538152] (-) TimerEvent: {}
+[115.640819] (-) TimerEvent: {}
+[115.741640] (-) TimerEvent: {}
+[115.842921] (-) TimerEvent: {}
+[115.944172] (-) TimerEvent: {}
+[116.044961] (-) TimerEvent: {}
+[116.145988] (-) TimerEvent: {}
+[116.246793] (-) TimerEvent: {}
+[116.347974] (-) TimerEvent: {}
+[116.449020] (-) TimerEvent: {}
+[116.549905] (-) TimerEvent: {}
+[116.650668] (-) TimerEvent: {}
+[116.751449] (-) TimerEvent: {}
+[116.852280] (-) TimerEvent: {}
+[116.953065] (-) TimerEvent: {}
+[117.054042] (-) TimerEvent: {}
+[117.155238] (-) TimerEvent: {}
+[117.256071] (-) TimerEvent: {}
+[117.356796] (-) TimerEvent: {}
+[117.457534] (-) TimerEvent: {}
+[117.558290] (-) TimerEvent: {}
+[117.659169] (-) TimerEvent: {}
+[117.760276] (-) TimerEvent: {}
+[117.861622] (-) TimerEvent: {}
+[117.962387] (-) TimerEvent: {}
+[118.063160] (-) TimerEvent: {}
+[118.164258] (-) TimerEvent: {}
+[118.265912] (-) TimerEvent: {}
+[118.366719] (-) TimerEvent: {}
+[118.467690] (-) TimerEvent: {}
+[118.558187] (diablo_ctrl) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable diablo_ctrl_node\x1b[0m\n'}
+[118.567959] (-) TimerEvent: {}
+[118.668711] (-) TimerEvent: {}
+[118.769542] (-) TimerEvent: {}
+[118.870590] (-) TimerEvent: {}
+[118.971622] (-) TimerEvent: {}
+[119.072657] (-) TimerEvent: {}
+[119.174013] (-) TimerEvent: {}
+[119.275389] (-) TimerEvent: {}
+[119.376852] (-) TimerEvent: {}
+[119.478225] (-) TimerEvent: {}
+[119.579715] (-) TimerEvent: {}
+[119.681311] (-) TimerEvent: {}
+[119.782463] (-) TimerEvent: {}
+[119.883682] (-) TimerEvent: {}
+[119.984897] (-) TimerEvent: {}
+[120.085988] (-) TimerEvent: {}
+[120.186849] (-) TimerEvent: {}
+[120.287551] (-) TimerEvent: {}
+[120.347372] (diablo_ctrl) StdoutLine: {'line': b'[100%] Built target diablo_ctrl_node\n'}
+[120.387806] (-) TimerEvent: {}
+[120.396482] (diablo_ctrl) CommandEnded: {'returncode': 0}
+[120.488103] (-) TimerEvent: {}
+[120.514520] (diablo_ctrl) JobProgress: {'identifier': 'diablo_ctrl', 'progress': 'install'}
+[120.515733] (diablo_ctrl) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/diablo/catkin_ws/build/diablo_ctrl'], 'cwd': '/home/diablo/catkin_ws/build/diablo_ctrl', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diablo'), ('SSH_CLIENT', '192.168.10.17 58717 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/diablo/catkin_ws/install/diablo_body/lib:/home/diablo/catkin_ws/install/diablo_utils/lib:/home/diablo/catkin_ws/install/motion_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/diablo'), ('OLDPWD', '/home/diablo/catkin_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('UBUNTU_MENUPROXY', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diablo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_body:/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/diablo/catkin_ws/build/diablo_ctrl'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.10.17 58717 192.168.10.16 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diablo/catkin_ws/install/motion_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/diablo/catkin_ws/install/diablo_body:/home/diablo/catkin_ws/install/diablo_utils:/home/diablo/catkin_ws/install/motion_msgs:/opt/ros/foxy')]), 'shell': False}
+[120.566322] (diablo_ctrl) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[120.567315] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/lib/diablo_ctrl/diablo_ctrl_node\n'}
+[120.582904] (diablo_ctrl) StdoutLine: {'line': b'-- Set runtime path of "/home/diablo/catkin_ws/install/diablo_ctrl/lib/diablo_ctrl/diablo_ctrl_node" to ""\n'}
+[120.583699] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/include/diablo_ctrl\n'}
+[120.584414] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/include/diablo_ctrl/diablo_ctrl.hpp\n'}
+[120.585843] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/ament_index/resource_index/package_run_dependencies/diablo_ctrl\n'}
+[120.587550] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/ament_index/resource_index/parent_prefix_path/diablo_ctrl\n'}
+[120.588167] (-) TimerEvent: {}
+[120.589418] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/environment/ament_prefix_path.sh\n'}
+[120.590813] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/environment/ament_prefix_path.dsv\n'}
+[120.592205] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/environment/path.sh\n'}
+[120.593604] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/environment/path.dsv\n'}
+[120.594914] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/local_setup.bash\n'}
+[120.596177] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/local_setup.sh\n'}
+[120.597409] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/local_setup.zsh\n'}
+[120.598750] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/local_setup.dsv\n'}
+[120.600063] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/package.dsv\n'}
+[120.601649] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/ament_index/resource_index/packages/diablo_ctrl\n'}
+[120.603228] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[120.604717] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[120.606086] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/cmake/diablo_ctrlConfig.cmake\n'}
+[120.607086] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/cmake/diablo_ctrlConfig-version.cmake\n'}
+[120.608594] (diablo_ctrl) StdoutLine: {'line': b'-- Installing: /home/diablo/catkin_ws/install/diablo_ctrl/share/diablo_ctrl/package.xml\n'}
+[120.615439] (diablo_ctrl) CommandEnded: {'returncode': 0}
+[120.688453] (-) TimerEvent: {}
+[120.789455] (-) TimerEvent: {}
+[120.814782] (diablo_ctrl) JobEnded: {'identifier': 'diablo_ctrl', 'rc': 0}
+[120.819020] (-) EventReactorShutdown: {}
